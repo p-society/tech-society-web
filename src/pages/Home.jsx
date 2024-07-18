@@ -10,6 +10,7 @@ import Footer from '../components/Home/Footer';
 function Home() {
   return (
     <div>
+
         <Navbar />
         <Hero />
       <section id="about">
