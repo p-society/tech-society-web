@@ -19,8 +19,12 @@ function Home() {
       <section id="events">
         <Events />
       </section>
+      <section id="achievement">
       <Achievements />
+      </section>
+      <section id='sponsors'>
       <Sponsors />
+      </section>
       <Footer />
     </div>
   );
