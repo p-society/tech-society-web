@@ -1,6 +1,5 @@
 .img-container {
     position: relative;
-    cursor: pointer; /* Add cursor pointer to indicate clickability */
   }
   
   .img-container img {
@@ -10,12 +9,11 @@
     filter: grayscale(100%);
     transition: filter 0.5s, transform 0.5s;
   }
-  
-  /* Hover effect for laptop versions */
+
   @media (hover: hover) {
     .img-container:hover img {
       filter: grayscale(0%);
-      transform: scale(1.1); /* Enlarge the image slightly */
+      transform: scale(1.1);
     }
   
     .img-container:hover .overlay {
@@ -28,7 +26,7 @@
   @media (hover: none) {
     .img-container.zoomed img {
       filter: grayscale(0%);
-      transform: scale(1.1); /* Enlarge the image slightly */
+      transform: scale(1.1); 
     }
   
     .img-container.zoomed .overlay {
@@ -49,7 +47,7 @@
   @media (hover: none) {
     .img-container:hover img {
       filter: grayscale(100%);
-      transform: scale(1); /* Remove hover effect on non-hover devices */
+      transform: scale(1);
     }
   
     .img-container:hover .overlay {
