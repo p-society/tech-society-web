@@ -1,95 +1,68 @@
-body {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  
-  overflow-x: hidden;
-  margin: 0;
-}
-
-section {
-  width: 100vw; /* Adjust the width as needed */
+.carousel {
   overflow: hidden;
-  position: relative;
-  --v-offset: 300px;
-  --curve-height: 400px;
+  width: 100%;
   display: flex;
-  align-items: center;
   justify-content: center;
 }
-section:before,
-section:after {
-  content: "";
+
+.carousel-track {
+  display: flex;
+  width: calc(100% * 3); /* Adjust based on the number of images */
+  animation: scroll 40s linear infinite;
+}
+
+.carousel-slide {
+  min-width: 100%; /* Adjust based on the number of images */
+  box-sizing: border-box;
+  padding: 0; /* Distance between images */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: 300px; /* Set a fixed height */
+  object-fit: cover; /* Maintain aspect ratio and cover the space */
   display: block;
-  background: white;
-  width: calc(100vw + 2 * var(--v-offset));
-  height: var(--curve-height);
-  position: absolute;
-  border-radius: 50%;
-  left: calc(-1 * var(--v-offset));
-  right: calc(-1 * var(--v-offset));
-}
-section:before {
-  top: calc(-0.6 * var(--curve-height));
-}
-section:after {
-  bottom: calc(-0.6 * var(--curve-height));
-}
-.wrapper {
-  display: grid;
-  grid-template-rows: 500px;
-  
-  grid-auto-flow: column;
-  grid-gap: 24px;
-  scroll-snap-type: x mandatory;
-  justify-content: center; /* Center the carousel */
+  animation: scaleEffect 40s linear infinite;
+  border-radius: 20px; /* Add curved edges */
 }
 
-.wrapper img {
-  scroll-snap-align: center;
-  width: 1200px; /* Increased width */
-  height: 500px; 
-  object-fit: cover;
-
-}
-.wrapper img:nth-child(2),
-.wrapper img:nth-child(3) {
-  width: 1000px; /* Smaller width for middle images */
-  height: 400px; /* Smaller height for middle images */
-}
-img[class^="images0"] {
-  animation: bannermove 20s linear 2s infinite;
-}
-img[class^="images1"] {
-  animation: bannermove 20s linear 2s infinite;
-}
-
-img[class^="images2"] {
-  animation: bannermove 20s linear 2s infinite;
-}
-
-img[class^="images3"] {
-  animation: bannermove 20s linear 2s infinite;
-}
-
-.wrapper:hover img[class^="images"] {
-  animation-play-state: paused;
-  cursor: pointer;
-}
-img[class^="images0"]:hover,
-img[class^="images1"]:hover,
-img[class^="images2"]:hover,
-img[class^="images3"]:hover {
-  transform: scale(1.1); /* Reduced scale factor for smoother effect */
-  height: 100% !important;
-  z-index: 1; /* Ensures the hovered image appears above others */
-}
-@keyframes bannermove {
+@keyframes scroll {
   0% {
-    margin-left: 0%;
+    transform: translateX(0);
   }
   100% {
-    margin-left: -250%; /* Adjusted for larger images */
+    transform: translateX(-500%);
+  }
+}
+
+@keyframes scaleEffect {
+  0%, 100% {
+    transform: scale(1.2); /* Largest at the edges */
+  }
+  50% {
+    transform: scale(0.8); /* Smallest in the middle */
+  }
+}
+
+/* Tablet view: 2 images */
+@media (min-width: 600px) {
+  .carousel-track {
+    width: calc(100% * 2);
+  }
+  .carousel-slide {
+    min-width: 50%;
+  }
+}
+
+/* Desktop view: 3 images */
+@media (min-width: 1024px) {
+  .carousel-track {
+    width: calc(100% * 3);
+  }
+  .carousel-slide {
+    min-width: 33.33%;
   }
 }

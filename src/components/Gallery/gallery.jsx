@@ -1,55 +1,68 @@
-import React, { useState, useEffect, useMemo } from "react";
-import "./gallery.css";
-import Button from "@mui/material/Button";
-import plant1 from "./images/plant1.jpg";
-import plant2 from "./images/plant2.jpg";
-import plant3 from "./images/plant3.jpg";
-import plant4 from "./images/plant4.jpg";
-import "react-slideshow-image/dist/styles.css";
-const Galleryy = () => {
-  const [imagesToo, setImagesToo] = useState([]);
-  const images = useMemo(() => {
-    return [plant1, plant2, plant3, plant4];
-  }, []);
+import React, { useState, useEffect, useRef } from 'react';
+import './gallery.css';
+import carouselImages from './galleryimg';
+
+const Gallery = () => {
+  const [currentIndex, setCurrentIndex] = useState(1);
+  const [isTransitioning, setIsTransitioning] = useState(false);
+  const trackRef = useRef(null);
+
+  const totalImages = carouselImages.length;
+  const images = [carouselImages[totalImages - 1], ...carouselImages, carouselImages[0]];
+
   useEffect(() => {
-    const removeImage = (index) => {
-      setImagesToo(images.filter((item) => item.index !== index));
+    const handleTransitionEnd = () => {
+      if (currentIndex === 0) {
+        setIsTransitioning(false);
+        setCurrentIndex(totalImages);
+      } else if (currentIndex === totalImages + 1) {
+        setIsTransitioning(false);
+        setCurrentIndex(1);
+      }
     };
-    removeImage(1);
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+
+    const track = trackRef.current;
+    track.addEventListener('transitionend', handleTransitionEnd);
+
+    return () => {
+      track.removeEventListener('transitionend', handleTransitionEnd);
+    };
+  }, [currentIndex, totalImages]);
+
+  useEffect(() => {
+    if (!isTransitioning) {
+      const track = trackRef.current;
+      track.style.transition = 'none';
+      track.style.transform = `translateX(-${currentIndex * 100}%)`;
+      requestAnimationFrame(() => {
+        track.style.transition = '';
+      });
+    }
+  }, [isTransitioning, currentIndex]);
+
+  const nextSlide = () => {
+    setIsTransitioning(true);
+    setCurrentIndex((prevIndex) => prevIndex + 1);
+  };
+
+  const prevSlide = () => {
+    setIsTransitioning(true);
+    setCurrentIndex((prevIndex) => prevIndex - 1);
+  };
 
   return (
-    
-      <section className="wrapper">
-        {
-          //loop through images array and display each image
-          images.map((image, index) => {
-            return (
-              <img
-                src={image}
-                key={index}
-                alt="plant"
-                className={"images" + index}
-                style={{ width: 300, height: 400 }}
-              />
-            );
-          })
-        }
-        {imagesToo.map((image, index) => {
-          return (
-            <img
-              src={image}
-              key={index}
-              alt="plant"
-              className={"images" + index}
-              style={{ width: 300, height: 400 }}
-            />
-          );
-        })}
-      </section>
-  
+    <div className="carousel">
+      <div className="carousel-track" ref={trackRef} style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
+        {images.map((image, index) => (
+          <div className="carousel-slide" key={index}>
+            <img src={image} alt={`Image ${index}`} />
+          </div>
+        ))}
+      </div>
+      <button onClick={prevSlide}>Previous</button>
+      <button onClick={nextSlide}>Next</button>
+    </div>
   );
 };
 
-export default Galleryy;
+export default Gallery;
