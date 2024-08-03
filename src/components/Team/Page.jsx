@@ -33,7 +33,7 @@ function Page() {
                 return (
                   <div
                     key={id}
-                    className={`flex flex-col mx-2 md:mx-4 lg:mx-10 img-container w-36 h-48 md:w-56 md:h-72 ${
+                    className={`flex flex-col mx-2 md:mx-4 lg:mx-10 img-container w-24 h-32 sm:w-36 sm:h-48 md:w-56 md:h-72 ${
                       zoomedImage === id ? "zoomed" : ""
                     }`}
                     onClick={() => handleImageClick(id)}
