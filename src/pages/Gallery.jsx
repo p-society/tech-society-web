@@ -1,11 +1,11 @@
 import React from 'react'
 
-import Hero from '../components/Gallery/Hero'
+import Hero1 from '../components/Gallery/Hero1'
 
 function Gallery() {
   return (
     <div>
-      <Hero />
+      <Hero1 />
       
     </div>
   )

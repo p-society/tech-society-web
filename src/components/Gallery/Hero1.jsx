@@ -14,7 +14,7 @@ const CurvedCarousel = () => {
       &quot;Exploring the Digital Frontier: Capturing the Tech-Infused World&quot;
       </h2>
       
-      <section>
+      <section className='section'>
         <div className="wrapper ">
           {frequentImages.map((src, index) => (
             <div key={index} className="image-container">
