@@ -20,8 +20,8 @@
   --gap-size: 5px;
 }
 
-section::before,
-section::after {
+.section::before,
+.section::after {
   content: "";
   display: block;
   background: #0C0A0A;
@@ -33,14 +33,14 @@ section::after {
   z-index: 1;
 }
 
-section::before {
+.section::before {
   top: calc(-2 * var(--curve-height) / 5);
   border-radius: 0 0 50% 50% / 0 0 50% 50%;
   border-bottom: var(--line-thickness) solid white;
   box-shadow: 0 calc(var(--gap-size) * -1) 0 0 #0C0A0A;
 }
 
-section::after {
+.section::after {
   bottom: calc(-2 * var(--curve-height) / 5);
   border-radius: 100% 100% 0 0 / 100% 100% 0 0;
   border-top: var(--line-thickness) solid white;
@@ -88,7 +88,7 @@ section::after {
 
 /* Media Queries */
 @media (min-width: 768px) {
-  section {
+  .section {
     --curve-height: 100px;
     --line-thickness: 4px;
     --gap-size: 7px;
@@ -113,7 +113,7 @@ section::after {
 }
 
 @media (min-width: 1024px) {
-  section {
+  .section {
     --curve-height: 120px;
     --line-thickness: 5px;
     --gap-size: 10px;

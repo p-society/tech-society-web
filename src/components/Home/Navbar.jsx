@@ -18,8 +18,8 @@ function Navbar() {
       <ul className='sm:flex space-x-10 text-custom-white items-center justify-end hidden '>
         <li className='px-2'><a className='text-md font-inter hover:text-white' href="/">Home</a></li>
         <li className='px-2'><a className='text-md font-inter hover:text-white' href="/gallery">Gallery</a></li>
-        <li className='px-2'><a className='text-md font-inter hover:text-white' href="#events">Events</a></li>
-        <li className='px-2'><a className='text-md font-inter hover:text-white' href="#about">About Us</a></li>
+        <li className='px-2'><a className='text-md font-inter hover:text-white' href="/#events">Events</a></li>
+        <li className='px-2'><a className='text-md font-inter hover:text-white' href="/team">Our Team</a></li>
         <li className='px-2'><a className='text-md font-inter hover:text-white' href="/">Contact Us</a></li>
       </ul>
     </nav> 
