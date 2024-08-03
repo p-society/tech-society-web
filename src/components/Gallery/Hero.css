@@ -7,9 +7,9 @@
   align-items: center;
   justify-items: center;
   overflow-x: hidden;
+  overflow: hidden;
+  position: relative;
 }
-
-
 
 section {
   width: 100vw;
@@ -17,7 +17,7 @@ section {
   position: relative;
   --curve-height: 80px;
   --line-thickness: 3px;
-  --gap-size: 5px
+  --gap-size: 5px;
 }
 
 section::before,
@@ -50,7 +50,7 @@ section::after {
 .wrapper {
   display: flex;
   padding: 20px 0;
-  animation: scroll 60s linear infinite;
+  animation: scroll 20s linear infinite;
 }
 
 .image-container {
@@ -72,7 +72,7 @@ section::after {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(calc(-100% * 16));
+    transform: translateX(calc(-300%));
   }
 }
 
@@ -88,8 +88,6 @@ section::after {
 
 /* Media Queries */
 @media (min-width: 768px) {
- 
-
   section {
     --curve-height: 100px;
     --line-thickness: 4px;
@@ -109,14 +107,12 @@ section::after {
       transform: translateX(0);
     }
     100% {
-      transform: translateX(calc(-50vw * 16));
+      transform: translateX(calc(-200%));
     }
   }
 }
 
 @media (min-width: 1024px) {
- 
-
   section {
     --curve-height: 120px;
     --line-thickness: 5px;
@@ -136,7 +132,7 @@ section::after {
       transform: translateX(0);
     }
     100% {
-      transform: translateX(calc((-100vw / 3) * 16));
+      transform: translateX(calc(-300%));
     }
   }
 }

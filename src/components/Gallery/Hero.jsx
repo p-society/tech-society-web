@@ -1,9 +1,9 @@
 import React from 'react';
 import './Hero.css';
-
+import carouselImages from './galleryimg';
 const CurvedCarousel = () => {
-  const images = Array.from({ length: 16 }, (_, i) => `https://picsum.photos/seed/picsum${i + 1}/600/600`);
-
+  const images = carouselImages;
+  const frequentImages = images.concat(images, images, images);
   return (
     <div className="carousel-container bg-[#0C0A0A]">
 
@@ -16,14 +16,15 @@ const CurvedCarousel = () => {
       
       <section>
         <div className="wrapper ">
-          {images.concat(images).map((src, index) => (
+          {frequentImages.map((src, index) => (
             <div key={index} className="image-container">
-              <img src={src} alt={`Image ${(index % 16) + 1}`} />
+              <img src={src} alt={`Image ${(index % images.length) + 1}`} />
             </div>
           ))}
         </div>
       </section>
     </div>
+
   );
 };
 
