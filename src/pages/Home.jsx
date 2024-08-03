@@ -10,6 +10,7 @@ import Footer from '../components/Home/Footer';
 function Home() {
   return (
     <div>
+
         <Navbar />
         <Hero />
       <section id="about">
@@ -18,8 +19,12 @@ function Home() {
       <section id="events">
         <Events />
       </section>
+      <section id="achievement">
       <Achievements />
+      </section>
+      <section id='sponsors'>
       <Sponsors />
+      </section>
       <Footer />
     </div>
   );
