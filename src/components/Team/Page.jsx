@@ -24,7 +24,7 @@ function Page() {
       <div className="flex flex-col gap-8 md:gap-11 lg:gap-12">
         {TeamData.map((team, index) => (
           <div key={index} className="flex flex-col gap-4 md:gap-6 lg:gap-10">
-            <h1 className="text-white text-2xl md:text-3xl lg:text-4xl font-normal">
+            <h1 className="text-white text-2xl md:text-3xl lg:text-4xl font-medium">
               • {team.teamName}
             </h1>
             <div className="flex justify-center">
@@ -33,7 +33,7 @@ function Page() {
                 return (
                   <div
                     key={id}
-                    className={`flex flex-col mx-2 md:mx-4 lg:mx-10 img-container w-36 h-48 md:w-48 md:h-64 ${
+                    className={`flex flex-col mx-2 md:mx-4 lg:mx-10 img-container w-36 h-48 md:w-56 md:h-72 ${
                       zoomedImage === id ? "zoomed" : ""
                     }`}
                     onClick={() => handleImageClick(id)}
