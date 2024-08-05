@@ -15,7 +15,7 @@ function Footer() {
 
       {/**Links section */}
 
-      <div className=' basis-1/2 lg:translate-x-36'>
+      <div className=' basis-1/2 lg:translate-x-36 pl-10 sm:pl-0'>
         <h2 className='font-roboto font-semibold text-custom-white lg:text-2xl'>LINKS</h2>
         <div className='flex'>
           <div>
