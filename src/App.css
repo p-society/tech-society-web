@@ -1,8 +1,0 @@
-img.grayscale {
-  filter: grayscale(100%);
-  transition: filter 0.3s;
-}
-
-img.grayscale:hover {
-  filter: grayscale(0%);
-}
