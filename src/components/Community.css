@@ -1,0 +1,15 @@
+div.cd{
+    
+        height: calc(100vh);
+        background-color: rgb(243, 241, 241); /* Use background color for white */
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    
+      
+}
+h1{
+        color: rgb(17, 90, 154);
+}

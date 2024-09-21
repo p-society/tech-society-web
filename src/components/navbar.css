@@ -39,6 +39,7 @@
     position: relative;
     font-size: 18px;
     cursor: pointer;
+    text-decoration: none;
   }
   
   /* Hover underline effect */
@@ -67,6 +68,10 @@
     display: flex;
     justify-content: flex-start;
   }
-  li{
-    font-family: Montserrat;
+  
+  li a {
+    text-decoration: none;      /* Removes underline */
+    font-family: Montserrat;    /* Set your desired font family */
+    color: inherit;             /* Optional: Keeps the same color as the parent element */
   }
+  

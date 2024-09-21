@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react';
 import './navbar.css';
 import techLogo from '../assets/techlogo.png'; 
+import {Link} from "react-router-dom";
+import Community from './Community'; 
 
 const Navbar = () => {
 
@@ -25,18 +27,21 @@ const Navbar = () => {
   }, []);
 
   return (
+   
     <div>
       <nav>
         <img src={techLogo} alt="Tech Logo" />
         <ul>
-          <li>HOME</li>
-          <li>COMMUNITY</li>
-          <li>GALLERY</li>
-          <li>ABOUT US</li>
-          <li>CONTACT</li>
-        </ul>
+          <li><Link to="/">HOME</Link></li>
+          <li><Link to="/Community">COMMUNITY</Link> </li>
+          <li><Link to="/Gallery">GALLERY</Link></li>
+          <li><Link to="/About">ABOUT US</Link></li>
+            <li><Link to="/Contact">CONTACT</Link></li>  
+        </ul> 
       </nav>
     </div>
+     
+    
   );
 };
 

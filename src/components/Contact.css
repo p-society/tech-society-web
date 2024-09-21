@@ -1,0 +1,15 @@
+div.zd{
+    
+    height: calc(100vh);
+    background-color: rgb(250, 248, 248); /* Use background color for white */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+  
+}
+h1{
+    color: rgb(12, 112, 200);
+}
