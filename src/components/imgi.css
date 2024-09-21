@@ -1,0 +1,61 @@
+.slider-container {
+  width: 80%;
+  border-radius: 2px;
+  max-width: 800px; /* Limit the width of the slider */
+  height: 100%; 
+  margin: 0 auto; /* Center the slider in the div */
+  margin-top: 44px;
+  margin-left: 65px;
+}
+
+.slider {
+  width: 100%;
+  height: 300px; /* Define the height for the slider */
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px; /* Round corners */
+  
+}
+
+.slick-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image fits well inside the container */
+}
+
+.slick-dots {
+  bottom: 15px; /* Position the dots at the bottom */
+}
+
+
+.slick-list {
+  overflow: hidden;
+}
+ 
+.slick-track {
+  display: flex;
+}
+.slick-slide {
+  width: 100% !important;  /* Ensures each slide takes full width */
+}
+
+.slick-prev,
+.slick-next {
+  z-index: 1; /* Ensure arrows are visible above images */
+}
+
+ 
+
+/* Right arrow */
+.arrow.right {
+  right: 10px;
+}
+
+/* Left arrow */
+.arrow.left {
+  left: 10px;
+}
+
+ 
+ 
+
