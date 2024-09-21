@@ -1,1 +1,1 @@
-# techSoc-web
+ this is tech website

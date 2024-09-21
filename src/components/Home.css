@@ -1,0 +1,91 @@
+
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300bold,600bold,300,600');
+ 
+
+/* Apply the imported font */
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1 {
+    font-weight: 600; /* Use the bold (600) variant */
+}
+
+p {
+    font-weight: 300; /* Use the light (300) variant */
+    font-style: italic; /* Use the italic variant if desired */
+}
+
+
+
+
+div.mb {
+  height: calc(100vh);
+  background-color: rgb(255, 255, 255); /* Use background color for white */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+img.sd {
+  height: 150px;
+  margin-right: 15px;
+  margin-top: 20%;
+  margin-left: 9px;
+}
+/*  */
+div.xd {
+  background-color:  #052431 ;
+  height: 55%;
+  width: 40%;  
+  margin-right: 50px;
+  border-radius: 20px;
+  border: 5px solid #c2ab19;
+  
+}
+
+div.fd {
+   
+  color: rgb(72, 151, 229);
+  height: 40%;
+  width: 35%;
+  margin-left: 100px;
+}
+h2{
+  font-weight: 900; 
+  font-size: 33px; 
+
+}
+
+p {
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+}
+ 
+  .jd {
+    margin-top: 30px;
+    margin-left: 30%;
+    color: rgb(230, 230, 230);
+    background-color: #11a6e6;
+   
+    
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600; /* Adjust weight based on the design */
+    cursor: pointer;
+    
+    transition: background-color 0.3s ease, transform 0.5s ease;
+  }
+  
+  .jd:hover {
+    background-color: #1480b3;
+    transform: scale(1.05); /* Zoom effect */
+  }
+  
+  
+  

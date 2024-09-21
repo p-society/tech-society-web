@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    font-family:Verdana, Geneva, Tahoma, sans-serift;
+    scroll-behavior: smooth; /* Adds smooth scrolling */
+  }
+  
+  nav {
+    background-color: white;
+    display: flex;
+    justify-content: space-between; /* Logo on left, links on right */
+    align-items: center;
+    padding: 20px 50px;
+    position: fixed; /* Keeps the navbar at the top */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for better visibility */
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    margin-right: 50px; /* Ensures the items don't touch the right edge */
+  }
+  
+  nav ul li {
+    position: relative;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  /* Hover underline effect */
+  nav ul li::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -5px;
+    height: 2px;
+    background-color: blue;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease-out;
+  }
+  
+  /* On hover, underline grows */
+  nav ul li:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+  
+  img {
+    height: 40px;
+    margin-left: 50px; /* Ensures the logo has space on the left side */
+    display: flex;
+    justify-content: flex-start;
+  }
+  li{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
