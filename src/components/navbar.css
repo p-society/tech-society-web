@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900');
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800,900');
+
+ 
+
 * {
     margin: 0;
     padding: 0;
@@ -5,7 +10,7 @@
   }
   
   body, html {
-    font-family:Verdana, Geneva, Tahoma, sans-serift;
+    font-family: Montserrat;
     scroll-behavior: smooth; /* Adds smooth scrolling */
   }
   
@@ -63,5 +68,5 @@
     justify-content: flex-start;
   }
   li{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Montserrat;
   }

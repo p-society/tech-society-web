@@ -1,19 +1,24 @@
 
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300bold,600bold,300,600');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900');
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800,900');
+
+ 
+
  
 
 /* Apply the imported font */
 body {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: Montserrat;
 }
 
 h1 {
-    font-weight: 600; /* Use the bold (600) variant */
+  font-family: Montserrat;
+    
 }
 
 p {
     font-weight: 300; /* Use the light (300) variant */
-    font-style: italic; /* Use the italic variant if desired */
+    /* Use the italic variant if desired */
 }
 
 
@@ -60,7 +65,7 @@ h2{
 }
 
 p {
-  color: rgb(0, 0, 0);
+  color: rgb(102, 95, 95);
   font-size: 20px;
 }
  
@@ -69,8 +74,6 @@ p {
     margin-left: 30%;
     color: rgb(230, 230, 230);
     background-color: #11a6e6;
-   
-    
     border: none;
     padding: 10px 20px;
     border-radius: 25px;
