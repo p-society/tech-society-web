@@ -7,18 +7,20 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+ 
+     flex-wrap: wrap;
+    gap:  0px 50px;
+    justify-content: center;
+    row-gap: 0px;
     display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 images per row */
+    gap: 20px; /* 20px gap between images */
+    padding: 20px;
   
 
   
 }
  
-.gallery {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
-  }
   
   .gallery-item {
     width: 300px;
