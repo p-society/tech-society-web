@@ -13,7 +13,8 @@
 
 div.mb {
   height: calc(90vh);
-  background-color: rgb(255, 255, 255); /* Use background color for white */
+  background-color: rgb(255, 255, 255);
+  background-image: url("../assets/bg.png") ; /* Use background color for white */
   background-size: cover;
   background-position: center;
   display: flex;
