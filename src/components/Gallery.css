@@ -1,28 +1,79 @@
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900');
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800,900');
+
+
+
+
+
+
 .fullgallery {
   height: calc(200vh);
 }
 
 .headline {
-  height: 200px;
+  margin-top: 5%;
+  height: 110px;
+  width: 80%;
   display: flex;
-  justify-content: center;
+  
+  justify-content: baseline;
   align-items: center;
   background-color: #fff; /* Optional: Makes the headline background visible */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
 }
 
-.headline p {
+.headline h2 {
   font-size: 2em;
-  color: black;
-  font-weight: bold;
+  color: rgb(171, 149, 11);
+  font-family: Montserrat;
+  font-weight: 700;
+}
+.headline p {
+  font-size: 18px; /* Adjust the size as per your design */
+  margin-top: 0;
+  line-height: 1.5; /* Adds line spacing to improve readability */
+  max-width: 800px; /* Limits the width for better readability */
+
+}.headline2 {
+  margin-top: 6%;
+  height: 70px;
+  width: 80%;
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
+  background-color: #fff; /* Optional: Makes the headline background visible */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.headline2 h2 {
+  font-size: 2em;
+  color: rgb(171, 149, 11);
+  font-family: Montserrat;
+  font-weight: 700;
+}
+.headline2 p {
+  font-size: 18px; /* Adjust the size as per your design */
+  margin-top: 0;
+  line-height: 1.5; /* Adds line spacing to improve readability */
+  max-width: 800px; /* Limits the width for better readability */
 }
 
 .imgii {
   height: 400px;
   margin-left: 22%;
-  margin-top: 10%;
+  margin-top: 0%;
 }
 .gallery {
-  margin-top: 10px;
+  margin-top: 0px;
   background-color: white;
   background-size: cover;
   background-position: center;
@@ -32,6 +83,8 @@
   padding: 10px;
   margin-left: 15%;
   margin-right: 15%;
+  grid-column-gap: 0px; /* Reduce the gap between columns */
+  
 }
 
 .gallery-item {

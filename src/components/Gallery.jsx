@@ -11,7 +11,7 @@ import Imgi from './imgi.jsx';
 
 
 const Gallery = () => {
-  const images = [image1, image2, image3, image4,image5,image6];
+  const images = [image1, image2, image3, image4,image5,image6,image1, image2, image3, image4,image5,image6];
 
 
   return (
@@ -19,7 +19,8 @@ const Gallery = () => {
      
     <div className='fullgallery'>
       <div className="headline">
-  <p>snapshots</p>
+  <h2>Tech-Soc MOMENTS</h2>
+  <p> Explore memorable moments from our annual event, where aspiring students,<br/> industry experts, and innovators come together to inspire and learn. </p>
 </div>
 
     <div className='gallery'>
@@ -33,7 +34,11 @@ const Gallery = () => {
      
       
     </div>
-    
+    <div className="headline2">
+  <h2>Tech-Soc MOMENTS</h2>
+  <p> Explore memorable moments from our annual event, where aspiring students,<br/> industry experts, and innovators come together to inspire and learn. </p>
+</div>
+
    <div className="imgii"><Imgi/></div>
     </div>
     </> 
