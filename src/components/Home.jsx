@@ -6,7 +6,11 @@ const Home = () => {
     return (
         <>
             <div className="mb">
-                <div className="fd">
+         
+                
+             
+            </div>
+            <div className="fd">
                     <h2>TechSoc IIIT BHUBANESWAR: </h2>
                     <p>
                         The main div uses display: flex to align both child divs (left and right)
@@ -17,9 +21,6 @@ const Home = () => {
                     </p>
                     <button className='jd'>Know More</button>
                 </div>
-                
-             
-            </div>
         </>
     );
 };

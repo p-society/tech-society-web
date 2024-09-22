@@ -41,32 +41,32 @@ img.sd {
   margin-left: 9px;
 }
 /*  */
-div.xd {
-  background-color:  #052431 ;
-  height: 55%;
-  width: 40%;  
-  margin-right: 50px;
-  border-radius: 20px;
-  border: 5px solid #c2ab19;
-  
-}
+ 
 
 div.fd {
    
-  color: rgb(72, 151, 229);
+  color: rgb(198, 172, 9);
   height: 40%;
-  width: 35%;
-  margin-left: 100px;
+  width: 80%;
+  
+  
 }
-h2{
+.fd h2{
   font-weight: 900; 
   font-size: 33px; 
+  margin-left: 37%;
 
 }
 
-p {
+.fd p {
   color: rgb(102, 95, 95);
   font-size: 20px;
+  display: flex;
+  margin-left: 22%;
+ 
+}
+.fd button{
+margin-left: 54%;
 }
  
   .jd {
