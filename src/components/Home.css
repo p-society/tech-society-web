@@ -12,7 +12,7 @@
 
 
 div.mb {
-  height: calc(100vh);
+  height: calc(90vh);
   background-color: rgb(255, 255, 255); /* Use background color for white */
   background-size: cover;
   background-position: center;
@@ -25,7 +25,8 @@ div.mb {
  
  
 .fd button{
-margin-left: 44%;
+margin-left: 46%;
+margin-bottom: 15px;
 }
  
   .jd {

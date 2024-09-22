@@ -108,7 +108,7 @@ const footer = () => {
 
     </ul>
   </div>
-  <div className='mx-auto mt-6 max-w-md text-center leading-relaxed text-gray-500 dark:text-gray-400'>© 2023 Copyright: Tech-Society IIIT Bhubaneswar</div>
+  <div className='mx-auto mt-0 max-w-md text-center leading-relaxed text-gray-500 dark:text-gray-400'>© 2023 Copyright: Tech-Society IIIT Bhubaneswar</div>
 </footer>
   )
 }
