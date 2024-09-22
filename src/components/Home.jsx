@@ -18,9 +18,7 @@ const Home = () => {
                     <button className='jd'>Know More</button>
                 </div>
                 
-                <div className="xd">
-                    <Imgi />
-                </div>
+             
             </div>
         </>
     );
