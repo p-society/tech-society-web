@@ -16,7 +16,10 @@ const Imgi = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     nextArrow: <SampleNextArrow />,
-    prevArrow: <SamplePrevArrow />
+    prevArrow: <SamplePrevArrow />, 
+    centerMode: false, // Ensure that only one image is centered and fully visible
+    focusOnSelect: true, // Enable focus on selected slide
+    centerPadding: '0px', 
   };
 
   return (

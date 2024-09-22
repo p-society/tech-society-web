@@ -7,7 +7,9 @@
   margin-top: 44px;
   margin-left: 65px;
 }
-
+.arrow.right{
+  color: black;
+}
 .slider {
   width: 100%;
   height: 300px; /* Define the height for the slider */
@@ -49,6 +51,7 @@
 /* Right arrow */
 .arrow.right {
   right: 10px;
+  
 }
 
 /* Left arrow */
@@ -56,6 +59,25 @@
   left: 10px;
 }
 
- 
+ /* Customize the arrows */
+.slick-prev:before,
+.slick-next:before {
+  color: black; /* Set the arrow color to black */
+}
+
+/* Customize your arrow icons if they are custom */
+.arrow {
+  font-size: 20px; /* Adjust size as needed */
+  color: black; /* Set the color to black */
+}
+
+.arrow.left {
+  content: '◄'; /* Adjust the icon if needed */
+}
+
+.arrow.right {
+  content: '►'; /* Adjust the icon if needed */
+}
+
  
 
