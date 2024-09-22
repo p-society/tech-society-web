@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import './navbar.css';
-import techLogo from '../assets/techlogo.png'; 
+import techLogo2 from '../assets/techlogo2.png'; 
 import {Link} from "react-router-dom";
 import Community from './Community'; 
 
@@ -30,7 +30,7 @@ const Navbar = () => {
    
     <div>
       <nav>
-        <img src={techLogo} alt="Tech Logo" />
+        <img src={techLogo2} alt="Tech Logo" />
         <ul>
           <li><Link to="/">HOME</Link></li>
           <li><Link to="/Community">COMMUNITY</Link> </li>

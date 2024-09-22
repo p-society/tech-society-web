@@ -44,17 +44,18 @@ img.sd {
  
 
 div.fd {
-   
+   background-color: rgb(7, 80, 91);
   color: rgb(198, 172, 9);
-  height: 40%;
-  width: 80%;
+  height: 400px;
+  width: 100%;
+  margin-bottom: 10px;
   
   
 }
 .fd h2{
   font-weight: 900; 
   font-size: 33px; 
-  margin-left: 37%;
+  margin-left: 33%;
 
 }
 
@@ -62,11 +63,12 @@ div.fd {
   color: rgb(102, 95, 95);
   font-size: 20px;
   display: flex;
-  margin-left: 22%;
+  margin-left: 12%;
+  margin-right: 12%;
  
 }
 .fd button{
-margin-left: 54%;
+margin-left: 44%;
 }
  
   .jd {

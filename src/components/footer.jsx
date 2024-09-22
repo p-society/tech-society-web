@@ -1,6 +1,7 @@
 import React from 'react'
 import './footer.css'
 
+
 const footer = () => {
   return (
   <footer className="bg-gray-100 dark:bg-gray-900">

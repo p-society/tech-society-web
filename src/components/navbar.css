@@ -62,7 +62,7 @@
     transform-origin: left;
   }
   
-  img {
+ nav img {
     height: 40px;
     margin-left: 50px; /* Ensures the logo has space on the left side */
     display: flex;
