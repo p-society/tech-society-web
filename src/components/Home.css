@@ -6,22 +6,9 @@
 
  
 
-/* Apply the imported font */
-body {
-    font-family: Montserrat;
-}
-
-h1 {
-  font-family: Montserrat;
-    
-}
-
-p {
-    font-weight: 300; /* Use the light (300) variant */
-    /* Use the italic variant if desired */
-}
-
-
+ 
+ 
+ 
 
 
 div.mb {
@@ -34,39 +21,9 @@ div.mb {
   align-items: center;
 }
 
-img.sd {
-  height: 150px;
-  margin-right: 15px;
-  margin-top: 20%;
-  margin-left: 9px;
-}
-/*  */
  
-
-div.fd {
-   background-color: rgb(7, 80, 91);
-  color: rgb(198, 172, 9);
-  height: 400px;
-  width: 100%;
-  margin-bottom: 10px;
-  
-  
-}
-.fd h2{
-  font-weight: 900; 
-  font-size: 33px; 
-  margin-left: 33%;
-
-}
-
-.fd p {
-  color: rgb(102, 95, 95);
-  font-size: 20px;
-  display: flex;
-  margin-left: 12%;
-  margin-right: 12%;
  
-}
+ 
 .fd button{
 margin-left: 44%;
 }
@@ -75,7 +32,7 @@ margin-left: 44%;
     margin-top: 30px;
     margin-left: 30%;
     color: rgb(230, 230, 230);
-    background-color: #11a6e6;
+    background-color:#db9705 ;
     border: none;
     padding: 10px 20px;
     border-radius: 25px;
@@ -88,7 +45,7 @@ margin-left: 44%;
   }
   
   .jd:hover {
-    background-color: #1480b3;
+    background-color:#b27b05;
     transform: scale(1.05); /* Zoom effect */
   }
   
