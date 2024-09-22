@@ -4,7 +4,9 @@ import './footer.css'
 const footer = () => {
   return (
     <div className='foot'>
-    am footer lol
+
+      
+   <div className='rb'>© 2023 Copyright: Tech-Society IIIT Bhubaneswar</div>
     </div>
   )
 }

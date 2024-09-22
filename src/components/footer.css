@@ -1,10 +1,12 @@
  .foot{
-    height: 120px;
-    background-color: rgb(116, 187, 238);  /* Correct path to the image */
+    height: 180px;
+    background-color: rgb(3, 74, 78);  /* Correct path to the image */
     background-size: cover; /* Ensures the image covers the whole div */
     background-position: center; /* Centers the image in the div */
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: Montserrat;
+    
  }
+  
