@@ -1,73 +1,72 @@
-.headline{
-  height: 200px;
-  background-color: aquamarine;
-  color: black;
-}
- 
-.fullgallery{
+.fullgallery {
   height: calc(200vh);
 }
-.imgii{
+
+.headline {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff; /* Optional: Makes the headline background visible */
+}
+
+.headline p {
+  font-size: 2em;
+  color: black;
+  font-weight: bold;
+}
+
+.imgii {
   height: 400px;
   margin-left: 22%;
   margin-top: 10%;
 }
-
-
-.gallery{
-    
-    margin-top: 10px;
-    background-color: white;  
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
- 
-     flex-wrap: wrap;
-    gap:  0px 50px;
-   
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 images per row */
-    gap: 20px; /* 20px gap between images */
-    padding: 0px;
-  
-
-  
+.gallery {
+  margin-top: 10px;
+  background-color: white;
+  background-size: cover;
+  background-position: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 3 images per row */
+  gap: 10px; /* Adjust the gap between images */
+  padding: 10px;
+  margin-left: 15%;
+  margin-right: 15%;
 }
- 
-  
-  .gallery-item {
-    width: 300px;
-    height: 200px;
-    overflow: hidden;
-    border-radius: 8px;
-    position: relative;
-    transition: transform 0.3s ease;
-    padding: 0px;
-  }
-  
-  .gallery-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.3s ease;
-  }
-  
-  .gallery-item:hover img {
-    transform: scale(1.1);  
-  }
- 
-  
-  .gallery-item img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    border-radius: 8px;
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  .gallery-item img:hover {
-            transform: scale(1.05);  }
 
-   
+.gallery-item {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  border-radius: 8px;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.05);
+}
+
+
+.gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.05);
+}
