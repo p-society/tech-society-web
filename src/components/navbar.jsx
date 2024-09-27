@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import './navbar.css';
-import techLogo2 from '../assets/techlogo2.png'; 
+import techLogo2 from '../assets/techlogo3.png'; 
 import {Link} from "react-router-dom";
 import Community from './Community'; 
 

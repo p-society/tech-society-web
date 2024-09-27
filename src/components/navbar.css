@@ -15,7 +15,8 @@
   }
   
   nav {
-    background-color: white;
+    background-color: transparent;
+
     display: flex;
     justify-content: space-between; /* Logo on left, links on right */
     align-items: center;
@@ -40,6 +41,7 @@
     font-size: 18px;
     cursor: pointer;
     text-decoration: none;
+    color: aliceblue;
   }
   
   /* Hover underline effect */

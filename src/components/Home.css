@@ -11,17 +11,51 @@
  
 
 
+ 
 div.mb {
-  height: calc(90vh);
-  background-color: rgb(255, 255, 255);
-  background-image: url("../assets/bg.png") ; /* Use background color for white */
+  position: relative;
+  background-image: url("../assets/bg.png");
   background-size: cover;
   background-position: center;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  height: 100vh; /* Adjust as needed */
 }
 
+div.mb::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.75); /* Dark transparent layer */
+  z-index: 1; /* Ensures it covers the background image */
+}
+
+/* Your content will sit on top */
+div.mb div.xn {
+  position: relative;
+  z-index: 2; /* Ensure content is above the dark layer */
+  color: white; /* Ensure text is visible */
+}
+  .first-word {
+  color: white;
+}
+
+.second-word {
+  color: blue;
+}
+
+
+div.xn h2{
+  padding-top: 15%;
+  padding-left: 10%;
+  font-weight: 700;
+  font-size: xxx-large;
+  
+}
+.xn p{
+  padding-left: 10%;
+}
  
  
  
