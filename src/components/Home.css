@@ -1,17 +1,6 @@
-
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900');
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800,900');
 
- 
-
- 
-
- 
- 
- 
-
-
- 
 div.mb {
   position: relative;
   background-image: url("../assets/bg.png");
@@ -37,7 +26,8 @@ div.mb div.xn {
   z-index: 2; /* Ensure content is above the dark layer */
   color: white; /* Ensure text is visible */
 }
-  .first-word {
+
+.first-word {
   color: white;
 }
 
@@ -45,45 +35,70 @@ div.mb div.xn {
   color: blue;
 }
 
-
-div.xn h2{
+div.xn h2 {
   padding-top: 15%;
   padding-left: 10%;
   font-weight: 700;
   font-size: xxx-large;
-  
 }
-.xn p{
+
+.xn p {
   padding-left: 10%;
 }
- 
- 
- 
-.fd button{
-margin-left: 46%;
-margin-bottom: 15px;
+
+div.fd  {
+  margin-left: 20%;
+  margin-bottom: 15px;
+  background-color: black;
+  margin-top: 0%;
+  height:280px;
+  width: 80%;
 }
- 
+
+.jd {
+  margin-top: 30px;
+  margin-left: 30%;
+  color: rgb(230, 230, 230);
+  background-color: #db9705;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600; /* Adjust weight based on the design */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.5s ease;
+}
+
+.jd:hover {
+  background-color: #b27b05;
+  transform: scale(1.05); /* Zoom effect */
+}
+
+/* Add mobile responsiveness using media queries */
+@media (max-width: 768px) {
+  div.mb {
+    height: auto; /* Allow content to adjust based on screen size */
+  }
+
+  div.xn h2 {
+    padding-top: 10%;
+    padding-left: 5%;
+    font-size: large; /* Adjust font size for mobile */
+  }
+
+  .xn p {
+    padding-left: 5%;
+    font-size: small; /* Adjust font size for mobile */
+  }
+
+  .fd button {
+    margin-left: 35%; /* Center button better on smaller screens */
+  }
+
   .jd {
-    margin-top: 30px;
-    margin-left: 30%;
-    color: rgb(230, 230, 230);
-    background-color:#db9705 ;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 25px;
-    font-size: 16px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 600; /* Adjust weight based on the design */
-    cursor: pointer;
-    
-    transition: background-color 0.3s ease, transform 0.5s ease;
+    margin-left: 15%; /* Adjust position for mobile */
+    font-size: 14px; /* Adjust button text size */
+    padding: 8px 16px; /* Adjust button padding for mobile */
   }
-  
-  .jd:hover {
-    background-color:#b27b05;
-    transform: scale(1.05); /* Zoom effect */
-  }
-  
-  
-  
+}

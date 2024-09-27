@@ -1,79 +1,102 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900');
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800,900');
 
- 
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body, html {
-    font-family: Montserrat;
-    scroll-behavior: smooth; /* Adds smooth scrolling */
-  }
-  
-  nav {
-    background-color: transparent;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-    display: flex;
-    justify-content: space-between; /* Logo on left, links on right */
-    align-items: center;
-    padding: 20px 50px;
-    position: fixed; /* Keeps the navbar at the top */
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 999;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for better visibility */
+body, html {
+  font-family: Montserrat;
+  scroll-behavior: smooth; /* Adds smooth scrolling */
+}
+
+nav {
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between; /* Logo on left, links on right */
+  align-items: center;
+  padding: 20px 50px;
+  position: fixed; /* Keeps the navbar at the top */
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for better visibility */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  margin-right: 50px; /* Ensures the items don't touch the right edge */
+}
+
+nav ul li {
+  position: relative;
+  font-size: 18px;
+  cursor: pointer;
+  text-decoration: none;
+  color: aliceblue;
+}
+
+/* Hover underline effect */
+nav ul li::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -5px;
+  height: 2px;
+  background-color: blue;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease-out;
+}
+
+/* On hover, underline grows */
+nav ul li:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+nav img {
+  height: 40px;
+  margin-left: 50px; /* Ensures the logo has space on the left side */
+  display: flex;
+  justify-content: flex-start;
+}
+
+li a {
+  text-decoration: none;      /* Removes underline */
+  font-family: Montserrat;    /* Set your desired font family */
+  color: inherit;             /* Optional: Keeps the same color as the parent element */
+}
+
+/* Responsive design for mobile */
+@media (max-width: 768px) {
+  nav {
+    padding: 10px 20px;
+    flex-direction: column; /* Stack the logo and links vertically on mobile */
   }
-  
+
   nav ul {
-    list-style: none;
-    display: flex;
-    gap: 40px;
-    margin-right: 50px; /* Ensures the items don't touch the right edge */
+    flex-direction: column; /* Stack the menu items vertically */
+    align-items: center;
+    gap: 20px; /* Reduce gap between links */
+    margin-right: 0; /* Center the items */
   }
-  
+
+  nav img {
+    margin-left: 0; /* Center the logo on mobile */
+  }
+
   nav ul li {
-    position: relative;
-    font-size: 18px;
-    cursor: pointer;
-    text-decoration: none;
-    color: aliceblue;
+    font-size: 16px; /* Adjust font size for mobile */
   }
-  
-  /* Hover underline effect */
-  nav ul li::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: -5px;
-    height: 2px;
-    background-color: blue;
-    transform: scaleX(0);
-    transform-origin: right;
-    transition: transform 0.3s ease-out;
+
+  nav ul {
+    margin-top: 20px; /* Space between logo and menu items */
   }
-  
-  /* On hover, underline grows */
-  nav ul li:hover::after {
-    transform: scaleX(1);
-    transform-origin: left;
-  }
-  
- nav img {
-    height: 40px;
-    margin-left: 50px; /* Ensures the logo has space on the left side */
-    display: flex;
-    justify-content: flex-start;
-  }
-  
-  li a {
-    text-decoration: none;      /* Removes underline */
-    font-family: Montserrat;    /* Set your desired font family */
-    color: inherit;             /* Optional: Keeps the same color as the parent element */
-  }
-  
+}
