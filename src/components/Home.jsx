@@ -28,15 +28,35 @@ const Home = () => {
 
       </div>
       <div className="fd">
-        <h2 className='mx-auto  text-center leading-relaxed text-blue-500 text-weight-900 text-3xl font-bold  '>WHAT IS TECH-SOCIETY? </h2>
-        <p className='mx-auto mt-0 max-w-5xl text-center leading-relaxed text-white dark:text-white-900 text-xl'>
-          The main div uses display: flex to align both child divs (left and right)
-          horizontally. `justify-content: space-between` ensures the left div is aligned
-          to the left and the right div to the right. `align-items: flex-start` aligns
-          both divs at the top, but you can manually shift the right div lower by adding
-          margin-top to it.
-        </p>
-  
+      <section className="stats-section">
+      <div className="container">
+        <div className="stats-content">
+          <div className="impact-text">
+            <h2>Our impact in<br/> Numbers.</h2>
+          </div>
+          <div className="stats-grid">
+            <div className="stat-item">
+              <div className="stat-number">
+                20k<span className="plus">+</span>
+              </div>
+              <h3>Students</h3>
+            </div>
+            <div className="stat-item">
+              <div className="stat-number">
+                2K<span className="plus">+</span>
+              </div>
+              <h3>Projects</h3>
+            </div>
+            <div className="stat-item">
+              <div className="stat-number">
+                250<span className="plus">+</span>
+              </div>
+              <h3>Mentors</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
 
       </div>

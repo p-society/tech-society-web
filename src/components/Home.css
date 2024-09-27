@@ -47,12 +47,12 @@ div.xn h2 {
 }
 
 div.fd  {
-  margin-left: 20%;
+  margin-right: 30%;
   margin-bottom: 15px;
   background-color: black;
   margin-top: 0%;
   height:280px;
-  width: 80%;
+  width: 70%;
 }
 
 .jd {
@@ -101,4 +101,63 @@ div.fd  {
     font-size: 14px; /* Adjust button text size */
     padding: 8px 16px; /* Adjust button padding for mobile */
   }
+}
+/* Base Styling for the Section */
+.stats-section {
+  background-color: #000; /* Black background */
+  color: #fff;            /* White text */
+  padding: 60px;        /* Padding around the section */
+}
+
+/* Container to Limit Width */
+.container {
+  max-width: 1200px;
+  margin: 0 auto; /* Centering the container */
+  padding: 0 20px;
+}
+
+/* Flexbox for the Content */
+.stats-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Left-Aligned Text */
+.impact-text h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0;
+  line-height: 1.2;
+}
+
+/* Grid for Stats */
+.stats-grid {
+  display: flex;
+  gap: 50px; /* Space between each stat */
+}
+
+/* Individual Stat Item */
+.stat-item {
+  text-align: center;
+}
+
+.stat-number {
+  font-size: 3rem;
+  font-weight: bold;
+  display: flex;
+  align-items: baseline;
+}
+
+.plus {
+  color: #007bff; /* Blue accent color */
+  font-size: 2rem;
+  margin-left: 5px;
+}
+
+h3 {
+  margin-top: 10px;
+  font-weight: 300;
+  font-size: 1.25rem;
+  
 }
