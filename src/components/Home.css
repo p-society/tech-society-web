@@ -259,15 +259,20 @@ div.home6{
   color: blue;
   font-weight: bold;
   margin-bottom: 10px;
+  margin-left: 12%;
+
+
 }
 
 .initiatives-heading {
+  margin-left: 12%;
   font-size: 36px;
   margin-bottom: 20px;
   color: #080808; /* Blue color for the main heading */
 }
 
 .browse-button {
+  margin-left: 12%;
   background-color: transparent;
   border: 2px solid #4f4f4f;
   border-radius: 20px;
@@ -279,9 +284,9 @@ div.home6{
 }
 
 .browse-button:hover {
-  background-color: #1e90ff; /* Blue background on hover */
+  background-color: #060606; /* Blue background on hover */
   color: #fff; /* White text on hover */
-  border-color: #1e90ff;
+  border-color: #090909;
 }
 
 .initiatives-grid {
@@ -296,7 +301,8 @@ div.home6{
 .initiative-card {
   background-color: #f7f7f7;
   padding: 30px;
-  width: 300px;
+  height: 320px;
+  width: 350px;
   border-radius: 15px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   text-align: left;
