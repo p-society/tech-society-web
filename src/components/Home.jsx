@@ -2,6 +2,7 @@ import React from 'react';
 import './Home.css'; // Your CSS file
 import Imgi from './imgi.jsx';
 import About from './About.jsx';
+
 const Home = () => {
   return (
     <>
@@ -70,8 +71,8 @@ const Home = () => {
         <div class="section">
         <h2>About Us</h2>
         <h1>Tech-Society</h1>
-        <p>On its mission towards building an enterprising India, Entrepreneurship Cell, IIT Kharagpur provides great opportunities for start-ups, colleges, alumni, and corporates to get involved with us.</p>
-        <a href="#" class="learn-more">Learn More_</a>
+        <p>The Tech Society engages with the campus community through six dedicated clubs, where we host a variety of sessions, including hands-on workshops, insightful lectures, and exciting competitions. It's a vibrant space for students to work on real-world projects, especially in open-source software (OSS).</p>
+        <a href="./community" class="learn-more">Learn More_</a>
     </div>
         </div>
        </div>
@@ -83,24 +84,24 @@ const Home = () => {
  
     <div className="initiatives-container">
       <h2 className="initiatives-title">Our Initiatives</h2>
-      <h1 className="initiatives-heading">Empowering the next generation of innovators.</h1>
+      <h1 className="initiatives-heading">Empowering the next generation of coders.</h1>
       <button className="browse-button">Browse All Initiatives</button>
       
       <div className="initiatives-grid">
         <div className="initiative-card">
-          <h3 className="initiative-title">Global Entrepreneurship Summit</h3>
+          <h3 className="initiative-title"> BEYOND BOUNDARIES</h3>
           <p className="initiative-description">Spreading the spirit of entrepreneurship!</p>
           <a href="#" className="learn-more">→</a>
         </div>
-
+       
         <div className="initiative-card">
-          <h3 className="initiative-title">Empresario</h3>
+          <h3 className="initiative-title">HACKFEST</h3>
           <p className="initiative-description">An annual business model competition organized by Entrepreneurship Cell, IIT Kharagpur.</p>
           <a href="#" className="learn-more">→</a>
         </div>
 
         <div className="initiative-card">
-          <h3 className="initiative-title">EAD/LSM</h3>
+          <h3 className="initiative-title">D<sup>3</sup></h3>
           <p className="initiative-description">Where we create awareness about entrepreneurship among the youth and support the local startup ecosystem.</p>
           <a href="#" className="learn-more">→</a>
         </div>
