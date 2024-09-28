@@ -60,6 +60,25 @@ const Home = () => {
 
 
       </div>
+      
+    <div className="home3">
+       <div className="home4">
+        <div className="home5">
+          <div className="home6">
+
+          </div>
+        <div class="section">
+        <h2>About Us</h2>
+        <h1>Tech-Society</h1>
+        <p>On its mission towards building an enterprising India, Entrepreneurship Cell, IIT Kharagpur provides great opportunities for start-ups, colleges, alumni, and corporates to get involved with us.</p>
+        <a href="#" class="learn-more">Learn More</a>
+    </div>
+        </div>
+       </div>
+        
+
+        </div>
+    
     </>
   );
 };
