@@ -78,6 +78,37 @@ const Home = () => {
         
 
         </div>
+   
+
+ 
+    <div className="initiatives-container">
+      <h2 className="initiatives-title">Our Initiatives</h2>
+      <h1 className="initiatives-heading">Empowering the next generation of innovators.</h1>
+      <button className="browse-button">Browse All Initiatives</button>
+      
+      <div className="initiatives-grid">
+        <div className="initiative-card">
+          <h3 className="initiative-title">Global Entrepreneurship Summit</h3>
+          <p className="initiative-description">Spreading the spirit of entrepreneurship!</p>
+          <a href="#" className="learn-more">→</a>
+        </div>
+
+        <div className="initiative-card">
+          <h3 className="initiative-title">Empresario</h3>
+          <p className="initiative-description">An annual business model competition organized by Entrepreneurship Cell, IIT Kharagpur.</p>
+          <a href="#" className="learn-more">→</a>
+        </div>
+
+        <div className="initiative-card">
+          <h3 className="initiative-title">EAD/LSM</h3>
+          <p className="initiative-description">Where we create awareness about entrepreneurship among the youth and support the local startup ecosystem.</p>
+          <a href="#" className="learn-more">→</a>
+        </div>
+      </div>
+    </div>
+ 
+ 
+
     
     </>
   );
