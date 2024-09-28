@@ -79,6 +79,7 @@ div.fd  {
 @media (max-width: 768px) {
   div.mb {
     height: auto; /* Allow content to adjust based on screen size */
+
   }
 
   div.xn h2 {
@@ -87,14 +88,16 @@ div.fd  {
     font-size: large; /* Adjust font size for mobile */
   }
 
-  .xn p {
+  div.xn p {
     padding-left: 5%;
     font-size: small; /* Adjust font size for mobile */
+
+
   }
 
-  .fd button {
-    margin-left: 35%; /* Center button better on smaller screens */
-  }
+
+
+
 
   .jd {
     margin-left: 15%; /* Adjust position for mobile */
