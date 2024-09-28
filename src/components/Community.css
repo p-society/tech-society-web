@@ -1,15 +1,64 @@
-div.cd{
-    
-        height: calc(100vh);
-        background-color: rgb(243, 241, 241); /* Use background color for white */
-        background-size: cover;
-        background-position: center;
+.cd {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
+        flex-direction: column;
         align-items: center;
-    
-      
+        background-color: black;
+        padding-top: 6em;
 }
-h1{
-        color: rgb(17, 90, 154);
+
+.community_heading {
+        text-align: center;
+        font-weight: 1000;
+        font-size: 2em;
+        color: #fff;
+}
+
+.community_hidden_navbar {
+        pointer-events: none;
+        opacity: 0;
+        z-index: -100;
+}
+
+.community_images {
+        overflow: hidden;
+        object-fit: contain;
+}
+
+.card .community_image {
+        display: flex;
+}
+
+.row .community_card:nth-child(odd) .card .community_image {
+        justify-content: left !important;
+}
+
+.row .community_card:nth-child(even) .card .community_image {
+        justify-content: right !important;
+}
+
+.card {
+        border: none;
+        color: white !important;
+}
+
+.card img {
+        border-radius: 0.25rem;
+}
+
+.card-title {
+        font-size: 2em;
+}
+
+@media (max-width:768px) {
+        .row .community_card:nth-child(odd) .card .community_image ,
+        .row .community_card:nth-child(even) .card .community_image{
+                justify-content: center !important;
+        }
+        .card-title{
+                font-size: 1.5em;
+        }
+        .card-body{
+                text-align: center;
+        }
 }
