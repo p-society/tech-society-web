@@ -107,19 +107,19 @@ const Home = () => {
       <div className="initiatives-grid">
         <div className="initiative-card">
           <h3 className="initiative-title"> BEYOND BOUNDARIES</h3>
-          <p className="initiative-description">Spreading the spirit of entrepreneurship!</p>
+          <p className="initiative-description">Spreading the spirit of coding!</p>
           <a href="#" className="learn-more">→</a>
         </div>
        
         <div className="initiative-card">
           <h3 className="initiative-title">HACKFEST</h3>
-          <p className="initiative-description">An annual business model competition organized by Entrepreneurship Cell, IIT Kharagpur.</p>
+          <p className="initiative-description">An annual hackathon organized by Tech-SocietyCell, IIIT Bhubaneswar.</p>
           <a href="#" className="learn-more">→</a>
         </div>
 
         <div className="initiative-card">
           <h3 className="initiative-title">D<sup>3</sup></h3>
-          <p className="initiative-description">Where we create awareness about entrepreneurship among the youth and support the local startup ecosystem.</p>
+          <p className="initiative-description">An annual National level hackathon organized by Tech-SocietyCell, IIIT Bhubaneswar.</p>
           <a href="#" className="learn-more">→</a>
         </div>
       </div>
