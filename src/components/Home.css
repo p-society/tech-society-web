@@ -47,12 +47,12 @@ div.xn h2 {
 }
 
 div.fd  {
-  margin-right: 30%;
+  margin-right: 0%;
   margin-bottom: 15px;
   background-color: black;
   margin-top: 0%;
   height:280px;
-  width: 70%;
+  width: 80%;
 }
 
 .jd {
@@ -128,17 +128,20 @@ div.fd  {
   font-size: 2.5rem;
   font-weight: bold;
   margin: 0;
+  margin-top: 30px;
+  margin-left: 85px;
   line-height: 1.2;
 }
 
 /* Grid for Stats */
 .stats-grid {
   display: flex;
-  gap: 50px; /* Space between each stat */
+  gap: 65px; /* Space between each stat */
 }
 
 /* Individual Stat Item */
 .stat-item {
+  display: grid;
   text-align: center;
 }
 
@@ -156,8 +159,82 @@ div.fd  {
 }
 
 h3 {
-  margin-top: 10px;
+  margin-top: 40px;
   font-weight: 300;
   font-size: 1.25rem;
   
+}
+div.home3{
+
+  height: 100vh;
+  background-color: #fff;
+  position: relative;
+}
+div.home5{
+  height: 65%;
+  width: 75%;
+  background-color: #fff;
+  margin-top: 60px;
+  position: absolute;
+  bottom: 0; /* Align to the bottom */
+left: 0; /* Align to the right */
+
+}
+
+
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif; /* You can replace this with any other font you find */
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+}
+
+.section {
+  padding: 50px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+  margin-left: 32%;
+  margin-top: 7.5%;
+  margin-right: 7%;
+}
+
+.section h2 {
+  color: #0056ff; /* Blue color for "About Us" */
+  font-size: 16px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  
+}
+
+.section h1 {
+  font-size: 42px;
+  color: #000;
+  margin: 10px 0;
+  font-weight: 700;
+}
+
+.section p {
+  font-size: 18px;
+  color: #666;
+  line-height: 1.6;
+}
+
+.learn-more {
+  display: inline-block;
+  margin-top: 20px;
+  color: #000;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.learn-more:hover {
+  text-decoration: underline;
+}
+
+.learn-more::after {
+  content: ' →'; /* Arrow after the text */
+  font-size: 18px;
+  font-weight: 700;
 }
