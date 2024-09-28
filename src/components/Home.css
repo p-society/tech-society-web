@@ -227,10 +227,11 @@ body {
   text-decoration: none;
   font-weight: 500;
   font-size: 18px;
+  text-transform: uppercase;
 }
 
 .learn-more:hover {
-  text-decoration: underline;
+  color:black;
 }
 
 .learn-more::after {
@@ -260,6 +261,7 @@ div.home6{
   font-weight: bold;
   margin-bottom: 10px;
   margin-left: 12%;
+  text-transform: uppercase;
 
 
 }
