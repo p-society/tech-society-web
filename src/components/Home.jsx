@@ -71,7 +71,7 @@ const Home = () => {
         <h2>About Us</h2>
         <h1>Tech-Society</h1>
         <p>On its mission towards building an enterprising India, Entrepreneurship Cell, IIT Kharagpur provides great opportunities for start-ups, colleges, alumni, and corporates to get involved with us.</p>
-        <a href="#" class="learn-more">Learn More</a>
+        <a href="#" class="learn-more">Learn More_</a>
     </div>
         </div>
        </div>
