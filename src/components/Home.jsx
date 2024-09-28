@@ -62,11 +62,11 @@ const Home = () => {
       </div>
       
     <div className="home3">
+      
        <div className="home4">
+ 
         <div className="home5">
-          <div className="home6">
-
-          </div>
+       
         <div class="section">
         <h2>About Us</h2>
         <h1>Tech-Society</h1>

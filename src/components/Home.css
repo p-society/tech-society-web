@@ -204,7 +204,7 @@ body {
   font-size: 16px;
   letter-spacing: 1px;
   text-transform: uppercase;
-  
+  font-weight: 600;
 }
 
 .section h1 {
@@ -237,4 +237,11 @@ body {
   content: ' →'; /* Arrow after the text */
   font-size: 18px;
   font-weight: 700;
+}
+div.home6{
+  background-color: #666;
+  height: 30%;
+  width: 20%;
+  margin-right: 0%;
+  margin-top: 20%;
 }
