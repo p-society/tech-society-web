@@ -1,6 +1,7 @@
 import React from 'react';
 import './Home.css'; // Your CSS file
-import image1 from '../assets/img1.png'
+import image1 from '../assets/img7.png'
+import image2 from '../assets/app_session.png'
 const Home = () => {
   return (
     <>
@@ -11,7 +12,7 @@ const Home = () => {
         <div className="about-us-section">
           <div className="image-section">
             <img
-        src={image1}
+        src={image2}
               alt="Speaker"
               className="about-us-image"
             />
