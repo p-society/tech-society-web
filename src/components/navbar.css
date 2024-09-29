@@ -1,6 +1,6 @@
 /* Base styles */
 nav {
-  background: linear-gradient(180deg, #000000 100%, #272626 63%);
+  background: linear-gradient(180deg, #000000 100%, #272626 63%);  
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -10,9 +10,9 @@ nav {
   left: 0;
   right: 0;
   z-index: 999;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Navigation list styles */
 nav ul {
   list-style: none;
   display: flex;
@@ -24,9 +24,9 @@ nav ul li {
   position: relative;
   font-size: 18px;
   cursor: pointer;
+  text-decoration: none;
   color: aliceblue;
 }
-
 /* Hover underline effect */
 nav ul li::after {
   content: '';
@@ -47,15 +47,14 @@ nav ul li:hover::after {
   transform-origin: left;
 }
 
+nav img {
+  height: 40px;
+}
+
 li a {
   text-decoration: none;
   font-family: Montserrat;
   color: inherit;
-}
-
-/* Logo image styling */
-nav img {
-  height: 40px;
 }
 
 /* Hamburger menu styles */
@@ -77,11 +76,9 @@ nav img {
 .menu-icon.open .bar:nth-child(1) {
   transform: rotate(-45deg) translate(-5px, 6px);
 }
-
 .menu-icon.open .bar:nth-child(2) {
   opacity: 0;
 }
-
 .menu-icon.open .bar:nth-child(3) {
   transform: rotate(45deg) translate(-5px, -6px);
 }
@@ -92,7 +89,6 @@ nav img {
   flex-direction: row;
 }
 
-/* Show menu items when active */
 .nav-links.active {
   display: block;
 }
@@ -127,5 +123,20 @@ nav img {
   /* Show the hamburger menu icon on mobile */
   .menu-icon {
     display: flex;
+  }
+}
+ 
+.nav-links {
+  display: flex;
+  gap: 40px;
+}
+
+.nav-links.active {
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
   }
 }
