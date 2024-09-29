@@ -6,16 +6,13 @@ import { Link } from 'react-router-dom';
 
 const footer = () => {
   return (
-    <footer className="bg-gray-100 dark:bg-gray-900">
+    <footer className="bg-black dark:bg-gray-900">
     <div className="mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
       <div className="flex justify-center text-teal-600 dark:text-teal-300">
         <img src={techLogo2} alt="image" height={75} width={200} />
       </div>
 
-      <p className="mx-auto mt-6 max-w-md text-center leading-relaxed text-gray-500 dark:text-gray-400">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt consequuntur amet culpa cum
-        itaque neque.
-      </p>
+    
 
       <ul className="mt-12 flex flex-wrap justify-center gap-6 md:gap-8 lg:gap-12">
         <li>
@@ -55,7 +52,7 @@ const footer = () => {
         </li>
       </ul>
 
-        <ul className="mt-12 flex justify-center gap-6 md:gap-8">
+        <ul className="mt-6  flex justify-center gap-8 md:gap-8 mb-0">
           <li>
             <a
               href="https://www.facebook.com/tesoc.iiitbh/"
@@ -137,7 +134,12 @@ const footer = () => {
 
         </ul>
       </div>
-      <div className='mx-auto mt-0 max-w-md text-center leading-relaxed text-gray-500 dark:text-gray-400 pb-6'>© 2024 IIIT Bhubaneswar Tech Society. All Rights Reserved.</div>
+      <p className="mx-auto  max-w-md text-center leading-relaxed text-lg text-white">
+      IIIT Bhubaneswar, Gothapatna, Bhubaneswar, Odisha, 751003
+      Email:  techsociety@iiitbh.ac.in <br/>
+       Phone:  +91-1234567890
+      </p>
+      <div className='mx-auto mt-2 max-w-md text-white text-center leading-relaxed pb-6'>© 2024 IIIT Bhubaneswar Tech Society. All Rights Reserved.</div>
     </footer>
   )
 }
