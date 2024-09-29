@@ -1,36 +1,23 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900');
-@import url('https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800,900');
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body, html {
-  font-family: Montserrat;
-  scroll-behavior: smooth; /* Adds smooth scrolling */
-}
-
+/* Base styles */
 nav {
-  background-color: transparent;
+  background: linear-gradient(180deg, #000000 100%, #272626 63%);  
   display: flex;
-  justify-content: space-between; /* Logo on left, links on right */
+  justify-content: space-between;
   align-items: center;
   padding: 20px 50px;
-  position: fixed; /* Keeps the navbar at the top */
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 999;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for better visibility */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 nav ul {
   list-style: none;
   display: flex;
   gap: 40px;
-  margin-right: 50px; /* Ensures the items don't touch the right edge */
+  margin-right: 50px;
 }
 
 nav ul li {
@@ -40,16 +27,15 @@ nav ul li {
   text-decoration: none;
   color: aliceblue;
 }
-
 /* Hover underline effect */
 nav ul li::after {
   content: '';
   position: absolute;
   left: 0;
   right: 0;
-  bottom: -5px;
+  bottom: -5px; /* Adjusts position of the underline */
   height: 2px;
-  background-color: blue;
+  background-color: blue; /* Blue color for the underline */
   transform: scaleX(0);
   transform-origin: right;
   transition: transform 0.3s ease-out;
@@ -63,40 +49,79 @@ nav ul li:hover::after {
 
 nav img {
   height: 40px;
-  margin-left: 50px; /* Ensures the logo has space on the left side */
-  display: flex;
-  justify-content: flex-start;
 }
 
 li a {
-  text-decoration: none;      /* Removes underline */
-  font-family: Montserrat;    /* Set your desired font family */
-  color: inherit;             /* Optional: Keeps the same color as the parent element */
+  text-decoration: none;
+  font-family: Montserrat;
+  color: inherit;
 }
 
-/* Responsive design for mobile */
+/* Hamburger menu styles */
+.menu-icon {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+/* Rotate bars when menu is open */
+.menu-icon.open .bar:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+.menu-icon.open .bar:nth-child(2) {
+  opacity: 0;
+}
+.menu-icon.open .bar:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* Hide menu items by default on mobile */
+.nav-links {
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-links.active {
+  display: block;
+}
+
 @media (max-width: 768px) {
   nav {
     padding: 10px 20px;
-    flex-direction: column; /* Stack the logo and links vertically on mobile */
   }
 
-  nav ul {
-    flex-direction: column; /* Stack the menu items vertically */
-    align-items: center;
-    gap: 20px; /* Reduce gap between links */
-    margin-right: 0; /* Center the items */
+  /* Hide the original nav links on mobile */
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #050505;
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
 
-  nav img {
-    margin-left: 0; /* Center the logo on mobile */
+  /* Show the menu when active */
+  .nav-links.active {
+    display: block;
   }
 
-  nav ul li {
-    font-size: 16px; /* Adjust font size for mobile */
+  .nav-links li {
+    margin: 10px 0;
   }
 
-  nav ul {
-    margin-top: 20px; /* Space between logo and menu items */
+  /* Show the hamburger menu icon on mobile */
+  .menu-icon {
+    display: flex;
   }
 }

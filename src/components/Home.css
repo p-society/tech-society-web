@@ -1,368 +1,138 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900');
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800,900');
 
-div.mb {
+div.home {
   position: relative;
   background-image: url("../assets/bg.png");
   background-size: cover;
   background-position: center;
-  height: 100vh; /* Adjust as needed */
+  height: 120vh; /* Adjust as needed */
 }
 
-div.mb::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.75); /* Dark transparent layer */
-  z-index: 1; /* Ensures it covers the background image */
+/* Main Container */
+.tech-society-container {
+  font-family: 'Raleway', sans-serif;
+  background: linear-gradient(180deg, 
+    #EBECDC 0%,  
+    #AAAAAA 14%, 
+    #7C7C7C 28%, 
+    #484947 45%, 
+    #272626 63%, 
+    #000000 100%);  
+  padding: 90px;
+  height: auto; /* Let the content define the height */
 }
 
-/* Your content will sit on top */
-div.mb div.xn {
-  position: relative;
-  z-index: 2; /* Ensure content is above the dark layer */
-  color: white; /* Ensure text is visible */
+/* Shared Section Styling */
+.text-section {
+  flex: 1;
+  padding: 20px;
 }
 
-.first-word {
-  color: white;
+.text-section h2, .text-section p {
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
 }
 
-.second-word {
-  color: blue;
+.text-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
 }
 
-div.xn h2 {
-  padding-top: 15%;
-  padding-left: 10%;
-  font-weight: 700;
-  font-size: xxx-large;
+.text-section p {
+  font-size: 1.2rem;
 }
 
-.xn p {
-  padding-left: 10%;
-}
-
-div.fd  {
-  margin-right: 0%;
-  margin-bottom: 15px;
-  background-color: black;
-  margin-top: 0%;
-  height:280px;
-  width: 80%;
-}
-
-.jd {
-  margin-top: 30px;
-  margin-left: 30%;
-  color: rgb(230, 230, 230);
-  background-color: #db9705;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 25px;
-  font-size: 16px;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 600; /* Adjust weight based on the design */
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.5s ease;
-}
-
-.jd:hover {
-  background-color: #b27b05;
-  transform: scale(1.05); /* Zoom effect */
-}
-
-/* Add mobile responsiveness using media queries */
-@media (max-width: 768px) {
-  div.mb {
-    height: auto; /* Allow content to adjust based on screen size */
-
-  }
-
-  div.xn h2 {
-    padding-top: 10%;
-    padding-left: 5%;
-    font-size: large; /* Adjust font size for mobile */
-  }
-
-  div.xn p {
-    padding-left: 5%;
-    font-size: small; /* Adjust font size for mobile */
-
-
-  }
-
-
-
-
-
-  .jd {
-    margin-left: 15%; /* Adjust position for mobile */
-    font-size: 14px; /* Adjust button text size */
-    padding: 8px 16px; /* Adjust button padding for mobile */
-  }
-}
-/* Base Styling for the Section */
-.stats-section {
-  background-color: #000; /* Black background */
-  color: #fff;            /* White text */
-  padding: 60px;        /* Padding around the section */
-}
-
-/* Container to Limit Width */
-.container {
-  max-width: 1200px;
-  margin: 0 auto; /* Centering the container */
-  padding: 0 20px;
-}
-
-/* Flexbox for the Content */
-.stats-content {
+.image-section {
+  flex: 1;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
-/* Left-Aligned Text */
-.impact-text h2 {
-  font-size: 2.5rem;
-  font-weight: bold;
-  margin: 0;
-  margin-top: 30px;
-  margin-left: 85px;
-  line-height: 1.2;
+.image-section img {
+  max-width: 80%;
+  height: auto;
+  border-radius: 8px;
 }
 
-/* Grid for Stats */
-.stats-grid {
+/* About Us Section */
+div.about-us-section {
   display: flex;
-  gap: 65px; /* Space between each stat */
+  flex-direction: row;
+  height: 80vh;
+  margin-bottom: 50px;
+}
+.code-learn-inspire-section .text-section{
+  margin-top: 10%;
+}
+div.about-us-section .text-section {
+  margin-top: 9%;
+  color: #0c0101;
 }
 
-/* Individual Stat Item */
-.stat-item {
-  display: grid;
-  text-align: center;
+div.about-us-section .text-section h2, div.about-us-section .text-section p {
+  color: #0c0101;
 }
 
-.stat-number {
-  font-size: 3rem;
-  font-weight: bold;
+/* Code, Learn, Inspire Section */
+div.code-learn-inspire-section {
   display: flex;
-  align-items: baseline;
+  flex-direction: row;
+  height: 80vh;
+  margin-bottom: 50px;
+  color: #fff;
 }
 
-.plus {
-  color: #007bff; /* Blue accent color */
-  font-size: 2rem;
-  margin-left: 5px;
+/* Additional Classes */
+.mb {
+  font-weight: 800; /* For bold emphasis */
 }
 
-h3 {
-  margin-top: 40px;
-  font-weight: 300;
-  font-size: 1.25rem;
-  
-}
-div.home3{
-
-  height: 100vh;
-  background-color: #fff;
-  position: relative;
-}
-div.home5{
-  height: 65%;
-  width: 75%;
-  background-color: #fff;
-  margin-top: 60px;
-  position: absolute;
-  bottom: 0; /* Align to the bottom */
-left: 0; /* Align to the right */
-
+.sd {
+  font-weight: 300; /* For light text */
 }
 
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  div.home {
+    height: 100vh; /* Adjust height for mobile */
+  }
 
-body {
-  font-family: 'Helvetica Neue', Arial, sans-serif; /* You can replace this with any other font you find */
-  margin: 0;
-  padding: 0;
-  background-color: #fff;
-}
+  .tech-society-container {
+    padding: 40px 10px; /* Reduced padding */
+  }
 
-.section {
-  padding: 50px;
-  max-width: 800px;
-  margin: 0 auto;
-  text-align: left;
-  margin-left: 32%;
-  margin-top: 7.5%;
-  margin-right: 7%;
-}
+  div.about-us-section,
+  div.code-learn-inspire-section {
+    flex-direction: column; /* Stack text and image vertically */
+    height: auto;
+  }
 
-.section h2 {
-  color: #0056ff; /* Blue color for "About Us" */
-  font-size: 16px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  font-weight: 600;
-}
+  /* Reordering for Mobile View */
+  .text-section {
+    order: 1; /* Show text first */
+    margin-top: 10px;
+    text-align: center;
+  }
 
-.section h1 {
-  font-size: 42px;
-  color: #000;
-  margin: 10px 0;
-  font-weight: 700;
-}
+  .image-section {
+    order: 2; /* Show image second */
+    margin-top: 20px;
+  }
 
-.section p {
-  font-size: 18px;
-  color: #666;
-  line-height: 1.6;
-}
+  .image-section img {
+    width: 100%;
+    max-width: 300px;
+  }
 
-.learn-more {
-  display: inline-block;
-  margin-top: 20px;
-  color: #000;
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 18px;
-  text-transform: uppercase;
-}
+  .text-section h2 {
+    font-size: 1.5rem;
+  }
 
-.learn-more:hover {
-  color:black;
-}
-
-.learn-more::after {
-  content: ' →'; /* Arrow after the text */
-  font-size: 18px;
-  font-weight: 700;
-}
-div.home6{
-  background-color: #666;
-  height: 30%;
-  width: 20%;
-  margin-right: 0%;
-  margin-top: 20%;
-
-
-
-  
-}/* Initiatives.css */
-.initiatives-container {
-  
-  padding: 40px;
-  height: 100vh;
-}
-
-.initiatives-title {
-  color: blue;
-  font-weight: bold;
-  margin-bottom: 10px;
-  margin-left: 12%;
-  text-transform: uppercase;
-
-
-}
-
-.initiatives-heading {
-  margin-left: 12%;
-  font-size: 36px;
-  margin-bottom: 20px;
-  color: #080808; /* Blue color for the main heading */
-}
-
-.browse-button {
-  margin-left: 12%;
-  background-color: transparent;
-  border: 2px solid #4f4f4f;
-  border-radius: 20px;
-  padding: 10px 20px;
-  cursor: pointer;
-  font-size: 16px;
-  margin-bottom: 40px;
-  transition: background-color 0.3s, color 0.3s;
-}
-
-.browse-button:hover {
-  background-color: #060606; /* Blue background on hover */
-  color: #fff; /* White text on hover */
-  border-color: #090909;
-}
-
-.initiatives-grid {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  flex-wrap: wrap;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.initiative-card {
-  background-color: #f7f7f7;
-  padding: 30px;
-  height: 320px;
-  width: 350px;
-  border-radius: 15px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  text-align: left;
-  transition: background-color 0.3s, color 0.3s, transform 0.3s;
-}
-
-.initiative-card:hover {
-  background-color: #01050a; /* Change background color on hover */
-  color: #fff; /* Change text color to white */
-
-}
-
-.initiative-title {
-  font-size: 22px;
-  margin-bottom: 10px;
-  transition: color 0.3s;
-}
-
-.initiative-description {
-  color: #4f4f4f;
-  font-size: 16px;
-  margin-bottom: 20px;
-}
-
-.initiative-card:hover .initiative-title,
-.initiative-card:hover .initiative-description {
-  color: #fff; /* Change to white on hover */
-}
-
-.learn-more {
-  display: inline-block;
-  margin-top: 10px;
-  color: #1e90ff;
-  text-decoration: none;
-  font-size: 18px;
-  transition: color 0.3s;
-}
-
-.initiative-card:hover .learn-more {
-  color: #fff; /* Change link color on hover */
-  transform: translateY(-5px); /* Slight lift effect on hover */
-  text-decoration: none; 
-}
-.initiative-card:hover  {
-  color: #fff; /* Change link color on hover */
-  transform: translateY(-5px); /* Slight lift effect on hover */
-}
-.initiative-card:nth-child(1) {
-  transform: translateY(70px); /* Lowest card */
-}
-
-.initiative-card:nth-child(2) {
-  transform: translateY(35px); /* Middle card */
-}
-
-.initiative-card:nth-child(3) {
-  transform: translateY(0); /* Top card */
+  .text-section p,
+  h1.text-white,
+  p.text-white {
+    font-size: 1rem;
+  }
 }
