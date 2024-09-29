@@ -53,6 +53,10 @@ const Home = () => {
             />
           </div>
         </div>
+        <div className='mx-auto text-center'>
+          <h1 className='text-white font text-4xl'><span className='font-bold'>Join</span> us</h1>
+          <p className='text-2xl text-white mt-2'>Dive into exciting projects, enhance your coding skills, and inspire others through open-source contributions. Join us today to start your journey in technology and make a difference!</p>
+        </div>
       </div>
     </>
   );
