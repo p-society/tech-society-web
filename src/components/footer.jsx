@@ -1,58 +1,59 @@
 import React from 'react'
 import './footer.css'
 import techLogo2 from '../assets/techlogo3.png';
+import { Link } from 'react-router-dom';
 
 
 const footer = () => {
   return (
     <footer className="bg-gray-100 dark:bg-gray-900">
-      <div className="mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
-        <div className="flex justify-center text-teal-600 dark:text-teal-300">
-          <img src={techLogo2} alt="image" height={75} width={200} />
-        </div>
+    <div className="mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
+      <div className="flex justify-center text-teal-600 dark:text-teal-300">
+        <img src={techLogo2} alt="image" height={75} width={200} />
+      </div>
 
-        <p className="mx-auto mt-6 max-w-md text-center leading-relaxed text-gray-500 dark:text-gray-400">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt consequuntur amet culpa cum
-          itaque neque.
-        </p>
+      <p className="mx-auto mt-6 max-w-md text-center leading-relaxed text-gray-500 dark:text-gray-400">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt consequuntur amet culpa cum
+        itaque neque.
+      </p>
 
-        <ul className="mt-12 flex flex-wrap justify-center gap-6 md:gap-8 lg:gap-12">
-          <li>
-            <a
-              className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
-              href="#"
-            >
-              About
-            </a>
-          </li>
+      <ul className="mt-12 flex flex-wrap justify-center gap-6 md:gap-8 lg:gap-12">
+        <li>
+          <Link
+            className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
+            to="/About"
+          >
+            About
+          </Link>
+        </li>
 
-          <li>
-            <a
-              className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
-              href="#"
-            >
-              Community
-            </a>
-          </li>
+        <li>
+          <Link
+            className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
+            to="/Community"
+          >
+            Community
+          </Link>
+        </li>
 
-          <li>
-            <a
-              className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
-              href="#"
-            >
-              Gallery
-            </a>
-          </li>
+        <li>
+          <Link
+            className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
+            to="/Gallery"
+          >
+            Gallery
+          </Link>
+        </li>
 
-          <li>
-            <a
-              className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
-              href="#"
-            >
-              Contact
-            </a>
-          </li>
-        </ul>
+        <li>
+          <Link
+            className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
+            to="/Contact"
+          >
+            Contact
+          </Link>
+        </li>
+      </ul>
 
         <ul className="mt-12 flex justify-center gap-6 md:gap-8">
           <li>
@@ -136,7 +137,7 @@ const footer = () => {
 
         </ul>
       </div>
-      <div className='mx-auto mt-0 max-w-md text-center leading-relaxed text-gray-500 dark:text-gray-400 pb-6'>© 2024 Copyright: Tech-Society IIIT Bhubaneswar</div>
+      <div className='mx-auto mt-0 max-w-md text-center leading-relaxed text-gray-500 dark:text-gray-400 pb-6'>© 2024 IIIT Bhubaneswar Tech Society. All Rights Reserved.</div>
     </footer>
   )
 }
