@@ -77,7 +77,7 @@ const teamMembers = [
 function ProfileCard({ name, role, image, facebook, twitter, instagram, linkedin }) {
   return (
     <div className="p-4 bg-black shadow-md rounded-lg hover:scale-105 hover:shadow-lg transition-all duration-300 cursor-pointer ">
-      <img src={image} alt={name} className="w-30 h-50 object-cover rounded-lg mb-4" />
+      <img src={image} alt={name} className="object-cover rounded-lg mb-4" />
       <h3 className="text-xl font-bold mb-2 text-white">{name}</h3>
       <p className="text-blue-500">{role}</p>
       <div className="flex justify-center mt-4 space-x-2">
