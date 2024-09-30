@@ -137,7 +137,9 @@ const footer = () => {
       </div>
       <p className="mx-auto  max-w-md text-center leading-relaxed text-lg text-white">
       IIIT Bhubaneswar, Gothapatna, Bhubaneswar, Odisha, 751003
-      Email:  techsociety@iiitbh.ac.in <br/>
+      <br />
+      Email: <a href="mailto:techsociety@iiitbh.ac.in" className="text-blue-400 hover:underline">techsociety@iiitbh.ac.in</a>
+      <br />
        Phone:  +91-1234567890
       </p>
       <div className='mx-auto mt-2 max-w-md text-white text-center leading-relaxed pb-6'>© 2024 IIIT Bhubaneswar Tech Society. All Rights Reserved.</div>
