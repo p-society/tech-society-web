@@ -29,7 +29,7 @@
 .headline h2, .headline2 h2 {
   font-size: 2.2em;
   color: rgb(171, 149, 11);
-  font-family: Montserrat;
+  font-family: 'Montserrat' ;
   font-weight: 700;
 }
 
@@ -38,6 +38,7 @@
   line-height: 1.5;
   max-width: 800px;
   margin-top: 10px;
+  font-family: 'Raleway';
 }
 
 .gallery {
