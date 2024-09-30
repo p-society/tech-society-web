@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900');
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800,900');
+
+
+
+
 .cd {
         display: flex;
         justify-content: center;
@@ -5,6 +11,7 @@
         align-items: center;
         background-color: black;
         padding-top: 6em;
+        font-family: 'Raleway' ;
 }
 
 .community_heading {

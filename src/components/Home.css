@@ -11,7 +11,7 @@ div.home {
 
 /* Main Container */
 .tech-society-container {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Raleway';
   background: linear-gradient(180deg, 
     #EBECDC 0%,  
     #AAAAAA 14%, 
@@ -30,7 +30,7 @@ div.home {
 }
 
 .text-section h2, .text-section p {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat',  ;
   color: #fff;
 }
 

@@ -76,6 +76,7 @@ const teamMembers = [
 
 function ProfileCard({ name, role, image, facebook, twitter, instagram, linkedin }) {
   return (
+    
     <div className="p-4 bg-black shadow-md rounded-lg hover:scale-105 hover:shadow-lg transition-all duration-300 cursor-pointer ">
       <img src={image} alt={name} className="object-cover rounded-lg mb-4" />
       <h3 className="text-xl font-bold mb-2 text-white">{name}</h3>
@@ -95,12 +96,14 @@ function ProfileCard({ name, role, image, facebook, twitter, instagram, linkedin
         </a>
       </div>
     </div>
+   
   );
 }
 
 function About() {
   return (
     <>
+    <div className="about"> 
       <div className='bg-white h-25' ></div>
       <div className=" px-12 py-24 bg-black">
         <h1 className=" mx-4 text-3xl mb-6 text-white"> <b>What</b> is the Society about?</h1>
@@ -123,6 +126,7 @@ function About() {
             ))}
           </div>
         {/* </div> */}
+      </div>
       </div>
     </>
   );
