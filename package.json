@@ -10,7 +10,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@formspree/react": "^2.5.1",
     "bootstrap": "^5.3.3",
+    "dotenv": "^16.4.5",
+    "emailjs-com": "^3.2.0",
+    "process": "^0.11.10",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.26.2",
