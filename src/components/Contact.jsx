@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
 import process from 'process';
-
+import './Contact.css'
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -40,8 +40,13 @@ const Contact = () => {
     <>
       <div className='bg-black h-20'></div>
       <div className="flex flex-col items-center min-h-screen p-6 pt-8 bg-black text-white">
-      <h2 className="text-2xl font-bold text-center mb-6">Reach us out !</h2>
-        <div className="w-full max-w-md bg-gray-800 p-8 rounded-lg shadow-md">
+      <h2 className="text-2xl font-bold text-center mb-6">We love hearing from you!</h2>
+      <p className='textWrapperContent'>Whether you have questions, feedback, or just want to say hello, we’re here for you. Your thoughts and ideas are what drive us forward.
+        <br/>
+        Please fill out the form below, and our team will get back to you as <strong>soon</strong> as possible:</p>
+
+
+        <div className="w-full max-w-md bg-gray-800 p-8  shadow-md">
           <form onSubmit={handleSubmit} className="space-y-4">
             <input
               id="name"
@@ -64,7 +69,7 @@ const Contact = () => {
             <textarea
               id="message"
               name="message"
-              placeholder="Your Message"
+              placeholder="What's on your mind?"
               rows="5"
               required
               className="w-full p-3 border text-black border-gray-700 rounded"
@@ -74,7 +79,7 @@ const Contact = () => {
               type="submit"
               className="w-full p-3 bg-blue-700 text-white rounded hover:bg-blue-800"
             >
-              Send Message
+              Shoot..! 
             </button>
           </form>
           {status && <p className="text-center mt-4">{status}</p>}
