@@ -35,7 +35,9 @@ const Navbar = () => {
   return (
     <div>
       <nav>
+        <a href='/'>
         <img src={techLogo2} alt="Tech Logo" />
+        </a>
         <div className={`menu-icon ${menuOpen ? 'open' : ''}`} onClick={toggleMenu}>
           <div className="bar"></div>
           <div className="bar"></div>

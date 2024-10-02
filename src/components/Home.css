@@ -3,24 +3,56 @@
 
 div.home {
   position: relative;
-  background-image: url("../assets/bg.png");
+  background-image: url("../assets/back.jpg");
   background-size: cover;
   background-position: center;
-  height: 120vh; /* Adjust as needed */
+  height: 120vh;
+  /* Adjust as needed */
+}
+
+.overlay-text {
+  position: absolute;
+  top: 30%;
+  /* Positioning from the top */
+  /* Positioning from the left */
+  transform: translateY(-50%);
+  /* Center vertically */
+  color: white;
+  /* Text color */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  /* Text shadow for visibility */
+  font-size: 4vw;
+  /* Responsive font size based on viewport width */
+  /* max-font-size: 50px; */
+  /* Optional: Limit the maximum size */
+  line-height: 1.2;
+  /* Adjust line height for better readability */
+  padding: 0 20px;
+  /* Add some padding for smaller screens */
+  box-sizing: border-box;
+  /* Include padding in width calculations */
+}
+
+h1 {
+  margin: 0;
+  /* Remove default margin */
+  padding: 0;
+  /* Remove default padding */
 }
 
 /* Main Container */
 .tech-society-container {
   font-family: 'Raleway';
-  background: linear-gradient(180deg, 
-    #EBECDC 0%,  
-    #AAAAAA 14%, 
-    #7C7C7C 28%, 
-    #484947 45%, 
-    #272626 63%, 
-    #121212 100%);  
+  background: linear-gradient(180deg,
+      #EBECDC 0%,
+      #AAAAAA 14%,
+      #7C7C7C 28%,
+      #484947 45%,
+      #272626 63%,
+      #121212 100%);
   padding: 90px;
-  height: auto; /* Let the content define the height */
+  height: auto;
+  /* Let the content define the height */
 }
 
 /* Shared Section Styling */
@@ -29,8 +61,9 @@ div.home {
   padding: 20px;
 }
 
-.text-section h2, .text-section p {
-  font-family: 'Montserrat',  ;
+.text-section h2,
+.text-section p {
+  font-family: 'Montserrat', ;
   color: #fff;
 }
 
@@ -63,15 +96,18 @@ div.about-us-section {
   height: 80vh;
   margin-bottom: 50px;
 }
-.code-learn-inspire-section .text-section{
+
+.code-learn-inspire-section .text-section {
   margin-top: 10%;
 }
+
 div.about-us-section .text-section {
   margin-top: 9%;
   color: #0c0101;
 }
 
-div.about-us-section .text-section h2, div.about-us-section .text-section p {
+div.about-us-section .text-section h2,
+div.about-us-section .text-section p {
   color: #0c0101;
 }
 
@@ -86,38 +122,45 @@ div.code-learn-inspire-section {
 
 /* Additional Classes */
 .mb {
-  font-weight: 800; /* For bold emphasis */
+  font-weight: 800;
+  /* For bold emphasis */
 }
 
 .sd {
-  font-weight: 300; /* For light text */
+  font-weight: 300;
+  /* For light text */
 }
 
 /* Media Queries for Responsive Design */
 @media (max-width: 768px) {
   div.home {
-    height: 100vh; /* Adjust height for mobile */
+    height: 100vh;
+    /* Adjust height for mobile */
   }
 
   .tech-society-container {
-    padding: 40px 10px; /* Reduced padding */
+    padding: 40px 10px;
+    /* Reduced padding */
   }
 
   div.about-us-section,
   div.code-learn-inspire-section {
-    flex-direction: column; /* Stack text and image vertically */
+    flex-direction: column;
+    /* Stack text and image vertically */
     height: auto;
   }
 
   /* Reordering for Mobile View */
   .text-section {
-    order: 1; /* Show text first */
+    order: 1;
+    /* Show text first */
     margin-top: 10px;
     text-align: center;
   }
 
   .image-section {
-    order: 2; /* Show image second */
+    order: 2;
+    /* Show image second */
     margin-top: 20px;
   }
 

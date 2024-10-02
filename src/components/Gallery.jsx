@@ -16,7 +16,6 @@ const Gallery = () => {
 
   return (
     <>
-     
     <div className='fullgallery'>
       <div className="headline">
   <h2>Tech-Soc MOMENTS</h2>
