@@ -40,8 +40,8 @@ const Contact = () => {
     <>
       <div className='bg-black h-20'></div>
       <div className="flex flex-col items-center min-h-screen p-6 pt-8 bg-black text-white">
+      <h2 className="text-2xl font-bold text-center mb-6">Reach us out !</h2>
         <div className="w-full max-w-md bg-gray-800 p-8 rounded-lg shadow-md">
-          <h2 className="text-2xl font-bold text-center mb-6">Contact Us</h2>
           <form onSubmit={handleSubmit} className="space-y-4">
             <input
               id="name"

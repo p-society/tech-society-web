@@ -1,58 +1,69 @@
 .slider-container {
   width: 80%;
   border-radius: 2px;
-  max-width: 800px; /* Limit the width of the slider */
-  height: 100%; 
-  margin: 0 auto; /* Center the slider in the div */
+  max-width: 800px;
+  /* Limit the width of the slider */
+  height: 100%;
+  margin: 0 auto;
+  /* Center the slider in the div */
   margin-top: 44px;
   margin-left: 65px;
 }
-.arrow.right{
+
+.arrow.right {
   color: black;
 }
+
 .slider {
   width: 100%;
-  height: 300px; /* Define the height for the slider */
+  height: 300px;
+  /* Define the height for the slider */
   position: relative;
   overflow: hidden;
-  border-radius: 15px; /* Round corners */
-  
+  border-radius: 15px;
+  /* Round corners */
+
 }
 
 .slick-slide img {
   width: 100%;
   height: 100%;
-  
-  object-fit: cover; /* Ensures the image fits well inside the container */
+
+  object-fit: cover;
+  /* Ensures the image fits well inside the container */
 }
 
 .slick-dots {
-  bottom: 15px; /* Position the dots at the bottom */
+  bottom: 15px;
+  /* Position the dots at the bottom */
 }
 
 
 .slick-list {
   overflow: hidden;
 }
- 
+
 .slick-track {
   display: flex;
 }
+
 .slick-slide {
-  width: 100% !important;  /* Ensures each slide takes full width */
+  width: 100% !important;
+  /* Ensures each slide takes full width */
 }
 
 .slick-prev,
 .slick-next {
-  z-index: 1; /* Ensure arrows are visible above images */
+  z-index: 1;
+  /* Ensure arrows are visible above images */
 }
 
- 
+
 
 /* Right arrow */
 .arrow.right {
   right: 10px;
-  
+
 }
 
 /* Left arrow */
@@ -60,30 +71,34 @@
   left: 10px;
 }
 
- /* Customize the arrows */
+/* Customize the arrows */
 .slick-prev:before,
 .slick-next:before {
-  color: black; /* Set the arrow color to black */
+  color: black;
+  /* Set the arrow color to black */
 }
 
 /* Customize your arrow icons if they are custom */
 .arrow {
-  font-size: 20px; /* Adjust size as needed */
-  color: black; /* Set the color to black */
+  font-size: 20px;
+  /* Adjust size as needed */
+  color: black;
+  /* Set the color to black */
 }
 
 .arrow.left {
-  content: '◄'; /* Adjust the icon if needed */
+  content: '◄';
+  /* Adjust the icon if needed */
 }
 
 .arrow.right {
-  content: '►'; /* Adjust the icon if needed */ 
+  content: '►';
+  /* Adjust the icon if needed */
 }
-div.home4{
+
+div.home4 {
   margin-top: 15%;
   margin-left: 24%;
   height: 100%;
   background-color: black;
 }
- 
-

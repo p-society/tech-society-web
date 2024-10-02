@@ -5,8 +5,12 @@ import image2 from '../assets/app_session.png'
 const Home = () => {
   return (
     <>
-      <div className="home"></div>
-
+      <div className="home">
+      <div className="overlay-text">
+    <h1>Welcome to the <strong>Best</strong> Technical club,</h1>
+    <h1><strong>Tech</strong> Society IIIT-Bh!</h1>
+  </div>
+      </div>
       <div className="tech-society-container">
         {/* First section - Little bit about us */}
         <div className="about-us-section">

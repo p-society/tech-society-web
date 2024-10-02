@@ -14,46 +14,46 @@ const Community = () => {
       image: tech_image,
       title: 'Programming',
       subtitle: 'Society',
-      description: 'Our team is a dynamic group of tech enthusiasts, designers, and innovators, all working together to drive the mission of the Tech Society forward. Meet the individuals who make it all happen!',
-      leads: 'Leads: Saswat Parasar Behera, Soubhik Gon',
+      description: 'The Programming Society is a hub for students passionate about coding and software development. We organize coding workshops, hackathons, and peer-to-peer learning sessions to help members sharpen their technical skills. Our focus is on fostering collaboration and innovation through various projects and coding competitions.',
+      leads: 'Leads: Saswat Parasar Behera, Soubhik Kumar Gon'
     },
     {
       image: gdsc_image,
       title: 'Google Developer',
-      subtitle: 'Groups ',
-      description: 'Our team is a dynamic group of tech enthusiasts, designers, and innovators, all working together to drive the mission of the Tech Society forward. Meet the individuals who make it all happen!',
-      leads: 'Leads: Saswat Parasar Behera, Soubhik Gon',
+      subtitle: 'Groups',
+      description: 'Google Developer Groups (GDG) provide a platform for students to learn about Google technologies like Android, Firebase, and TensorFlow. We host hands-on coding sessions, technical talks, and hackathons to empower students to build projects, learn modern frameworks, and prepare for careers in tech. Collaboration with other GDG chapters expands our reach globally.',
+      leads: 'Lead: Sipra Mohanty'
+
     },
     {
       image: mlsa_image,
       title: 'Microsoft Learn Student',
       subtitle: 'Ambassador',
-      description: 'Our team is a dynamic group of tech enthusiasts, designers, and innovators, all working together to drive the mission of the Tech Society forward. Meet the individuals who make it all happen!',
-      leads: 'Leads: Saswat Parasar Behera, Soubhik Gon',
+      description: 'The Microsoft Learn Student Ambassador program focuses on empowering students through Microsoft technologies. We offer workshops and events on Azure, AI, and .NET, providing opportunities for members to gain certifications and participate in global Microsoft challenges. Our goal is to prepare students for industry demands in cloud computing, AI, and software development.',
     },
     {
       image: chef_image,
-      title: 'Codechef',
+      title: 'CodeChef',
       subtitle: '',
-      description: 'Our team is a dynamic group of tech enthusiasts, designers, and innovators, all working together to drive the mission of the Tech Society forward. Meet the individuals who make it all happen!',
-      leads: 'Leads: Saswat Parasar Behera, Soubhik Gon',
+      description: 'CodeChef provides a competitive programming environment where students can improve their problem-solving skills. We regularly organize contests, coding challenges, and mock interviews to help members prepare for programming competitions like ICPC and develop efficient algorithms. The club also holds workshops for students new to competitive coding.',
+      leads: 'Lead: Chirantan Beura'
     },
     {
       image: ninja_image,
       title: 'Coding Ninjas',
       subtitle: 'Student Club',
-      description: 'Our team is a dynamic group of tech enthusiasts, designers, and innovators, all working together to drive the mission of the Tech Society forward. Meet the individuals who make it all happen!',
-      leads: 'Leads: Saswat Parasar Behera, Soubhik Gon',
+      description: 'The Coding Ninjas Student Club focuses on building a strong foundation in programming through well-structured boot camps and coding sessions. We cover various languages like Python, Java, and C++, along with data structures and algorithms. Members also work on real-world projects to apply their knowledge and collaborate in a team environment.',
+      leads: 'Lead: Nikhil Rajpoot'
     },
     {
       image: info_image,
       title: 'InfoSec',
       subtitle: 'Club',
-      description: 'Our team is a dynamic group of tech enthusiasts, designers, and innovators, all working together to drive the mission of the Tech Society forward. Meet the individuals who make it all happen!',
-      leads: 'Leads: Saswat Parasar Behera, Soubhik Gon',
+      description: 'The InfoSec Club is dedicated to cybersecurity and ethical hacking. We host workshops on penetration testing, network security, and cryptography. Members participate in Capture The Flag (CTF) competitions, security audits, and ethical hacking challenges, preparing them for careers in cybersecurity and helping them stay ahead of security trends.',
+      leads: 'Lead: Gourav Munjan'
     },
   ];
-
+  
   return (
     <div className='cd'>
       <div className="container">
