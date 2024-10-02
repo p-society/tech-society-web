@@ -140,7 +140,7 @@ const footer = () => {
       <br />
       Email: <a href="mailto:techsociety@iiitbh.ac.in" className="text-blue-400 hover:underline">techsociety@iiitbh.ac.in</a>
       <br />
-       Phone:  +91-1234567890
+       Phone:  +91-91988 51103
       </p>
       <div className='mx-auto mt-2 max-w-md text-white text-center leading-relaxed pb-6'>© 2024 IIIT Bhubaneswar Tech Society. All Rights Reserved.</div>
     </footer>

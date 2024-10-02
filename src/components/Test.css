@@ -1,0 +1,19 @@
+.galleryMain {
+    color: white;
+    font-size: 5vw;
+    text-align: center;
+    margin-top: 10vh;
+}
+
+.galleryText {
+    color: azure,
+}
+
+.galleryTextContainer {
+    max-width: 60%;
+    margin: auto;
+    text-align: center;
+    color:#fff;
+    margin-top:1rem;
+    font-size: 20px;
+}

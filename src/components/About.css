@@ -1,21 +1,30 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900');
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800,900');
-div.about{
+
+div.about {
     font-family: 'Raleway';
 }
 
-div.ld{
-    
+div.ld {
+
     height: calc(100vh);
-    background-color: rgb(250, 248, 248); /* Use background color for white */
+    background-color: rgb(250, 248, 248);
+    /* Use background color for white */
     background-size: cover;
     background-position: center;
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-  
+
 }
-h1{
+
+h1 {
     color: rgb(12, 112, 200);
+}
+
+.lastCard {
+    display: flex;
+    justify-content: center;
+    margin-bottom: -25px;
 }

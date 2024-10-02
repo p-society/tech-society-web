@@ -1,6 +1,6 @@
 import React from 'react';
 import './Home.css'; // Your CSS file
-import image1 from '../assets/img7.png'
+import psocProject from '../assets/psocprojects.png'
 import image2 from '../assets/app_session.png'
 const Home = () => {
   return (
@@ -51,7 +51,7 @@ const Home = () => {
           </div>
           <div className="image-section">
             <img
-              src={image1}
+              src={psocProject}
               alt="Tech Society Projects"
               className="projects-image"
             />

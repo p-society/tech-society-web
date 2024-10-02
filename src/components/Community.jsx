@@ -28,13 +28,13 @@ const Community = () => {
     {
       image: mlsa_image,
       title: 'Microsoft Learn Student',
-      subtitle: 'Ambassador',
+      subtitle: 'Chapter',
       description: 'The Microsoft Learn Student Ambassador program focuses on empowering students through Microsoft technologies. We offer workshops and events on Azure, AI, and .NET, providing opportunities for members to gain certifications and participate in global Microsoft challenges. Our goal is to prepare students for industry demands in cloud computing, AI, and software development.',
     },
     {
       image: chef_image,
       title: 'CodeChef',
-      subtitle: '',
+      subtitle: 'Chapter IIIT-Bh',
       description: 'CodeChef provides a competitive programming environment where students can improve their problem-solving skills. We regularly organize contests, coding challenges, and mock interviews to help members prepare for programming competitions like ICPC and develop efficient algorithms. The club also holds workshops for students new to competitive coding.',
       leads: 'Lead: Chirantan Beura'
     },
@@ -62,7 +62,7 @@ const Community = () => {
         <div className="row" style={{ justifyContent: 'center' }}>
           {data.map((item, index) => {
             return (
-              <div className="col-10 mb-4 community_card" key={index}>
+              <div className="col-10 mb-12 community_card" key={index}>
                 <div className="card mb-3" style={{ background: 'transparent' }}>
                   <div className="row no-gutters">
                     <div className={`community_image col-md-4 ${index % 2 === 0 ? '' : 'order-md-2'}`}>
