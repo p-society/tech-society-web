@@ -1,6 +1,3 @@
-<<<<<<< HEAD
- this is tech website
-=======
 <h1 align="center">
       Tech Society Website - Client Source Tree
 	<br>
@@ -39,6 +36,4 @@ Official Client Source Tree for Tech society IIIT-Bh.
 Made with [contributors-img](https://contributors-img.web.app).
 
 # License <a name="License"></a>
-
 Tech Society Web is licensed under [Apache License](https://github.com/p-society/tech-society-web/blob/master/LICENSE)
->>>>>>> 94237c1abe154208d3d44ef69266449659f02e8e
