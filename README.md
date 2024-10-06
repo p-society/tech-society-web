@@ -22,7 +22,7 @@ Official Client Source Tree for Tech society IIIT-Bh.
 
 <div align="center">
 <br/>
-<img src='https://skillicons.dev/icons?i=django,react,azure,html,css,js' ></img>
+<img src='https://skillicons.dev/icons?i=react,js' ></img>
 </div>
 <br/>
 
