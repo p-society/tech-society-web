@@ -1,11 +1,11 @@
 import React from 'react';
 import './Gallery.css';
-import image1 from '../assets/img1.png';  
-import image2 from '../assets/img3.png';
-import image3 from '../assets/img2.png';
-import image4 from '../assets/img4.png';
-import image5 from '../assets/img5.png';
-import image6 from '../assets/img6.png';
+import image1 from '../assets/img1.webp';  
+import image2 from '../assets/img3.webp';
+import image3 from '../assets/img2.webp';
+import image4 from '../assets/img4.webp';
+import image5 from '../assets/img5.webp';
+import image6 from '../assets/img6.webp';
 import Imgi from './imgi.jsx';
 
 

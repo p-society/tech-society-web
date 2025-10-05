@@ -1,12 +1,12 @@
 import React from 'react';
 import './Community.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import tech_image from '../assets/community/tech.png';
-import mlsa_image from '../assets/community/mlsa.png';
-import chef_image from '../assets/community/chef.png';
-import ninja_image from '../assets/community/ninja.png';
-import gdsc_image from '../assets/community/gdsc.png';
-import info_image from '../assets/community/info.png';
+import tech_image from '../assets/community/tech.webp';
+import mlsa_image from '../assets/community/mlsa.webp';
+import chef_image from '../assets/community/chef.webp';
+import ninja_image from '../assets/community/ninja.webp';
+import gdsc_image from '../assets/community/gdsc.webp';
+import info_image from '../assets/community/info.webp';
 
 const Community = () => {
   const data = [

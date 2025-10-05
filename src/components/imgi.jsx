@@ -1,9 +1,9 @@
 import React from 'react';
 import Slider from "react-slick";
-import imgi1 from '../assets/img1.png'; 
-import imgi2 from '../assets/img2.png'; 
-import imgi3 from '../assets/img3.png'; 
-import techblue from '../assets/techblue.png'; 
+import imgi1 from '../assets/img1.webp'; 
+import imgi2 from '../assets/img2.webp'; 
+import imgi3 from '../assets/img3.webp'; 
+import techblue from '../assets/techblue.webp'; 
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css"; 
 import './imgi.css'

@@ -1,11 +1,11 @@
 import React from 'react';
-import soubhik from '../assets/soubhik.png';
-import sipra from '../assets/sipra.jpg';
-import chirantan from '../assets/chirantan.jpg';
-import gourav from '../assets/gourav.jpg';
-import ehtisham from '../assets/ehtisham.jpg';
-import saswat from '../assets/saswat.jpg';
-import nikhil from '../assets/nikhil.jpg';
+import soubhik from '../assets/soubhik.webp';
+import sipra from '../assets/sipra.webp';
+import chirantan from '../assets/chirantan.webp';
+import gourav from '../assets/gourav.webp';
+import ehtisham from '../assets/ehtisham.webp';
+import saswat from '../assets/saswat.webp';
+import nikhil from '../assets/nikhil.webp';
 import './About.css'
 const teamMembers = [
   {

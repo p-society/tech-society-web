@@ -3,7 +3,7 @@
 
 div.home {
   position: relative;
-  background-image: url("../assets/back.jpg");
+  background-image: url("../assets/back.webp");
   background-size: cover;
   background-position: center;
   height: 120vh;

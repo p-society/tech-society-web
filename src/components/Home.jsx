@@ -1,7 +1,7 @@
 import React from 'react';
 import './Home.css'; // Your CSS file
-import psocProject from '../assets/psocprojects.png'
-import image2 from '../assets/app_session.png'
+import psocProject from '../assets/psocprojects.webp'
+import image2 from '../assets/app_session.webp'
 const Home = () => {
   return (
     <>

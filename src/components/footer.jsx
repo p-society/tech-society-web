@@ -1,6 +1,6 @@
 import React from 'react'
 import './footer.css'
-import techLogo2 from '../assets/techlogo3.png';
+import techLogo2 from '../assets/techlogo3.webp';
 import { Link } from 'react-router-dom';
 
 
